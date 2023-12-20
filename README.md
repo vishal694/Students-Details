@@ -1,20 +1,19 @@
-
-#  Project Title: Students Details
+# Project Title: Students Details
 
 ## I created APIs for Students Details related.
 
 ## I implemented few parts in Project
-###
-  1 Students
+
+  ### 1 Students
 		http://localhost:8080/api/student
 		http://localhost:8080/api/student/{enrollNo}
-  2 Books  
+ ### 2 Books  
 		http://localhost:8080/api/book
 		http://localhost:8080/api/book/{bookId}
-  3 Vehicle
+ ### 3 Vehicle
 		http://localhost:8080/api/vehicle
 		http://localhost:8080/api/vehicle/{vehicleId}
-  4 class
+ ### 4 class
 		http://localhost:8080/api/class
 		http://localhost:8080/api/class/{classId}
 		
