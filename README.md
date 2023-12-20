@@ -3,7 +3,6 @@
 ## I created APIs for Students Details related.
 
 ## I implemented few parts in Project.
-
  > 1 Students
 		>> http://localhost:8080/api/student
 		>> http://localhost:8080/api/student/{enrollNo}
