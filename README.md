@@ -4,7 +4,7 @@
 
 ## I implemented few parts in Project and also, I uploaded sample data in dbTables folder
 
-  > 1 Students
+ > 1 Students
 		> http://localhost:8080/api/student
 		> http://localhost:8080/api/student/{enrollNo}
  > 2 Books  
