@@ -1,0 +1,1453 @@
+2023-12-18 22:09:01 INFO  [EntryPoint.java:34] Initializing Spring Boot!
+2023-12-18 22:09:02 INFO  [StartupInfoLogger.java:55] Starting EntryPoint on DESKTOP-SIV9206 with PID 11664 (G:\emptyspringrestexample\target\classes started by user in G:\emptyspringrestexample)
+2023-12-18 22:09:02 INFO  [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2023-12-18 22:09:03 INFO  [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-18 22:09:03 INFO  [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-12-18 22:09:04 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.AuthorsRepo. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-18 22:09:04 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.BookRepo. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-18 22:09:04 INFO  [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 91ms. Found 0 JDBC repository interfaces.
+2023-12-18 22:09:04 INFO  [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-18 22:09:04 INFO  [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2023-12-18 22:09:04 INFO  [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 35ms. Found 2 JPA repository interfaces.
+2023-12-18 22:09:04 INFO  [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2023-12-18 22:09:04 INFO  [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-18 22:09:04 INFO  [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-12-18 22:09:04 INFO  [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.36]
+2023-12-18 22:09:05 INFO  [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-12-18 22:09:05 INFO  [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 2731 ms
+2023-12-18 22:09:05 INFO  [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-18 22:09:05 INFO  [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-18 22:09:05 INFO  [Version.java:44] HHH000412: Hibernate ORM core version 5.4.17.Final
+2023-12-18 22:09:05 WARN  [JpaBaseConfiguration.java:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-18 22:09:05 INFO  [JavaReflectionManager.java:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-12-18 22:09:05 INFO  [PropertySourcedRequestMappingHandlerMapping.java:69] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-12-18 22:09:05 INFO  [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-12-18 22:09:06 INFO  [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2023-12-18 22:09:06 INFO  [Dialect.java:172] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-12-18 22:09:06 INFO  [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-18 22:09:06 INFO  [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-18 22:09:06 INFO  [DocumentationPluginsBootstrapper.java:147] Context refreshed
+2023-12-18 22:09:06 INFO  [DocumentationPluginsBootstrapper.java:150] Found 1 custom documentation plugin(s)
+2023-12-18 22:09:06 INFO  [ApiListingReferenceScanner.java:41] Scanning for api listing references
+2023-12-18 22:09:06 INFO  [DeferredRepositoryInitializationListener.java:49] Triggering deferred initialization of Spring Data repositories…
+2023-12-18 22:09:07 INFO  [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-18 22:09:07 INFO  [AbstractEntityManagerFactoryBean.java:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-18 22:09:07 INFO  [DeferredRepositoryInitializationListener.java:53] Spring Data repositories initialized!
+2023-12-18 22:09:07 INFO  [StartupInfoLogger.java:61] Started EntryPoint in 5.993 seconds (JVM running for 6.976)
+2023-12-18 22:09:20 INFO  [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-18 22:09:20 INFO  [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2023-12-18 22:09:20 INFO  [FrameworkServlet.java:547] Completed initialization in 15 ms
+2023-12-18 22:09:25 INFO  [SpringApplicationAdminMXBeanRegistrar.java:159] Application shutdown requested.
+2023-12-18 22:09:26 INFO  [AbstractEntityManagerFactoryBean.java:598] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-18 22:09:26 INFO  [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-18 22:09:26 INFO  [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2023-12-18 22:09:26 INFO  [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2023-12-18 22:15:26 INFO  [EntryPoint.java:34] Initializing Spring Boot!
+2023-12-18 22:15:26 INFO  [StartupInfoLogger.java:55] Starting EntryPoint on DESKTOP-SIV9206 with PID 14992 (G:\studentDetails\target\classes started by user in G:\studentDetails)
+2023-12-18 22:15:26 INFO  [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2023-12-18 22:15:27 INFO  [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-18 22:15:27 INFO  [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-12-18 22:15:28 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.AuthorsRepo. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-18 22:15:28 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.BookRepo. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-18 22:15:28 INFO  [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 38ms. Found 0 JDBC repository interfaces.
+2023-12-18 22:15:28 INFO  [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-18 22:15:28 INFO  [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2023-12-18 22:15:28 INFO  [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 30ms. Found 2 JPA repository interfaces.
+2023-12-18 22:15:28 INFO  [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2023-12-18 22:15:28 INFO  [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-18 22:15:28 INFO  [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-12-18 22:15:28 INFO  [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.36]
+2023-12-18 22:15:29 INFO  [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-12-18 22:15:29 INFO  [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 2224 ms
+2023-12-18 22:15:29 INFO  [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-18 22:15:29 INFO  [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-18 22:15:29 INFO  [Version.java:44] HHH000412: Hibernate ORM core version 5.4.17.Final
+2023-12-18 22:15:29 WARN  [JpaBaseConfiguration.java:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-18 22:15:29 INFO  [JavaReflectionManager.java:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-12-18 22:15:29 INFO  [PropertySourcedRequestMappingHandlerMapping.java:69] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-12-18 22:15:29 INFO  [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-12-18 22:15:30 INFO  [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2023-12-18 22:15:30 INFO  [Dialect.java:172] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-12-18 22:15:30 INFO  [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-18 22:15:30 INFO  [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-18 22:15:30 INFO  [DocumentationPluginsBootstrapper.java:147] Context refreshed
+2023-12-18 22:15:30 INFO  [DocumentationPluginsBootstrapper.java:150] Found 1 custom documentation plugin(s)
+2023-12-18 22:15:30 INFO  [ApiListingReferenceScanner.java:41] Scanning for api listing references
+2023-12-18 22:15:30 INFO  [DeferredRepositoryInitializationListener.java:49] Triggering deferred initialization of Spring Data repositories…
+2023-12-18 22:15:31 INFO  [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-18 22:15:31 INFO  [AbstractEntityManagerFactoryBean.java:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-18 22:15:31 INFO  [DeferredRepositoryInitializationListener.java:53] Spring Data repositories initialized!
+2023-12-18 22:15:31 INFO  [StartupInfoLogger.java:61] Started EntryPoint in 5.446 seconds (JVM running for 6.308)
+2023-12-18 22:15:37 INFO  [SpringApplicationAdminMXBeanRegistrar.java:159] Application shutdown requested.
+2023-12-18 22:15:37 INFO  [AbstractEntityManagerFactoryBean.java:598] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-18 22:15:37 INFO  [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-18 22:15:37 INFO  [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2023-12-18 22:15:37 INFO  [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2023-12-18 22:20:35 INFO  [EntryPoint.java:34] Initializing Spring Boot!
+2023-12-18 22:20:35 INFO  [StartupInfoLogger.java:55] Starting EntryPoint on DESKTOP-SIV9206 with PID 8592 (G:\studentDetails\target\classes started by user in G:\studentDetails)
+2023-12-18 22:20:35 INFO  [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2023-12-18 22:20:36 INFO  [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-18 22:20:36 INFO  [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-12-18 22:20:36 INFO  [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 11ms. Found 0 JDBC repository interfaces.
+2023-12-18 22:20:36 INFO  [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-18 22:20:36 INFO  [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2023-12-18 22:20:36 INFO  [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 1ms. Found 0 JPA repository interfaces.
+2023-12-18 22:20:37 INFO  [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2023-12-18 22:20:37 INFO  [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-18 22:20:37 INFO  [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-12-18 22:20:37 INFO  [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.36]
+2023-12-18 22:20:37 INFO  [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-12-18 22:20:37 INFO  [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 2137 ms
+2023-12-18 22:20:37 INFO  [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-18 22:20:37 INFO  [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-18 22:20:38 INFO  [Version.java:44] HHH000412: Hibernate ORM core version 5.4.17.Final
+2023-12-18 22:20:38 WARN  [JpaBaseConfiguration.java:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-18 22:20:38 INFO  [JavaReflectionManager.java:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-12-18 22:20:38 INFO  [PropertySourcedRequestMappingHandlerMapping.java:69] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-12-18 22:20:38 INFO  [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-12-18 22:20:39 ERROR [HikariPool.java:593] HikariPool-1 - Exception during pool initialization.
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'studnetdetails'
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2191)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2222)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2017)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:779)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:389)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:358)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:477)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:560)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:176)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:118)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1224)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1255)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2023-12-18 22:20:39 WARN  [JdbcEnvironmentInitiator.java:132] HHH000342: Could not obtain connection to query metadata : Unknown database 'studnetdetails'
+2023-12-18 22:20:39 INFO  [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-12-18 22:20:39 INFO  [Dialect.java:172] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-12-18 22:20:40 ERROR [HikariPool.java:593] HikariPool-1 - Exception during pool initialization.
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'studnetdetails'
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2191)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2222)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2017)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:779)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:389)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:358)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:477)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:560)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:158)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:116)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:79)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:324)
+	at org.springframework.data.jdbc.repository.config.DialectResolver$DefaultDialectProvider.getDialect(DialectResolver.java:102)
+	at org.springframework.data.jdbc.repository.config.DialectResolver.lambda$getDialect$0(DialectResolver.java:72)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.tryAdvance(ArrayList.java:1602)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.springframework.data.jdbc.repository.config.DialectResolver.getDialect(DialectResolver.java:74)
+	at org.springframework.data.jdbc.repository.config.AbstractJdbcConfiguration.jdbcDialect(AbstractJdbcConfiguration.java:144)
+	at org.springframework.boot.autoconfigure.data.jdbc.JdbcRepositoriesAutoConfiguration$SpringBootJdbcConfiguration$$EnhancerBySpringCGLIB$$1dff0af6.CGLIB$jdbcDialect$1(<generated>)
+	at org.springframework.boot.autoconfigure.data.jdbc.JdbcRepositoriesAutoConfiguration$SpringBootJdbcConfiguration$$EnhancerBySpringCGLIB$$1dff0af6$$FastClassBySpringCGLIB$$658e18ec.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at org.springframework.boot.autoconfigure.data.jdbc.JdbcRepositoriesAutoConfiguration$SpringBootJdbcConfiguration$$EnhancerBySpringCGLIB$$1dff0af6.jdbcDialect(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:650)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:635)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1304)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1224)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:884)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:538)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:893)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.wedevol.emptyspringrest.EntryPoint.main(EntryPoint.java:35)
+2023-12-18 22:20:40 INFO  [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-12-18 22:20:40 WARN  [AbstractApplicationContext.java:559] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jdbcConverter' defined in class path resource [org/springframework/boot/autoconfigure/data/jdbc/JdbcRepositoriesAutoConfiguration$SpringBootJdbcConfiguration.class]: Unsatisfied dependency expressed through method 'jdbcConverter' parameter 4; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jdbcDialect' defined in class path resource [org/springframework/boot/autoconfigure/data/jdbc/JdbcRepositoriesAutoConfiguration$SpringBootJdbcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.relational.core.dialect.Dialect]: Factory method 'jdbcDialect' threw exception; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'studnetdetails'
+2023-12-18 22:20:40 INFO  [AbstractEntityManagerFactoryBean.java:598] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-18 22:20:41 ERROR [HikariPool.java:593] HikariPool-1 - Exception during pool initialization.
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'studnetdetails'
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2191)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2222)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2017)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:779)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:389)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:358)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:477)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:560)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:43)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:60)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcDatabaseMetaData(ImprovedExtractionContextImpl.java:67)
+	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.getTables(InformationExtractorJdbcDatabaseMetaDataImpl.java:333)
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.getTablesInformation(DatabaseInformationImpl.java:120)
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:65)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:207)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:114)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:184)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:316)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:469)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1259)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2023-12-18 22:20:41 WARN  [SqlExceptionHelper.java:137] SQL Error: 1049, SQLState: 42000
+2023-12-18 22:20:41 ERROR [SqlExceptionHelper.java:142] Unknown database 'studnetdetails'
+2023-12-18 22:20:41 WARN  [DisposableBeanAdapter.java:267] Invocation of destroy method failed on bean with name 'entityManagerFactory': javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution
+2023-12-18 22:20:41 INFO  [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-18 22:20:41 INFO  [DirectJDKLog.java:173] Stopping service [Tomcat]
+2023-12-18 22:20:41 INFO  [ConditionEvaluationReportLoggingListener.java:136] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-12-18 22:20:41 ERROR [SpringApplication.java:837] Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jdbcConverter' defined in class path resource [org/springframework/boot/autoconfigure/data/jdbc/JdbcRepositoriesAutoConfiguration$SpringBootJdbcConfiguration.class]: Unsatisfied dependency expressed through method 'jdbcConverter' parameter 4; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jdbcDialect' defined in class path resource [org/springframework/boot/autoconfigure/data/jdbc/JdbcRepositoriesAutoConfiguration$SpringBootJdbcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.relational.core.dialect.Dialect]: Factory method 'jdbcDialect' threw exception; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'studnetdetails'
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:797)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:538)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:893)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.wedevol.emptyspringrest.EntryPoint.main(EntryPoint.java:35)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jdbcDialect' defined in class path resource [org/springframework/boot/autoconfigure/data/jdbc/JdbcRepositoriesAutoConfiguration$SpringBootJdbcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.relational.core.dialect.Dialect]: Factory method 'jdbcDialect' threw exception; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'studnetdetails'
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:635)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1304)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1224)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:884)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	... 20 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.relational.core.dialect.Dialect]: Factory method 'jdbcDialect' threw exception; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'studnetdetails'
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:650)
+	... 34 common frames omitted
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'studnetdetails'
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:82)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:324)
+	at org.springframework.data.jdbc.repository.config.DialectResolver$DefaultDialectProvider.getDialect(DialectResolver.java:102)
+	at org.springframework.data.jdbc.repository.config.DialectResolver.lambda$getDialect$0(DialectResolver.java:72)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.tryAdvance(ArrayList.java:1602)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.springframework.data.jdbc.repository.config.DialectResolver.getDialect(DialectResolver.java:74)
+	at org.springframework.data.jdbc.repository.config.AbstractJdbcConfiguration.jdbcDialect(AbstractJdbcConfiguration.java:144)
+	at org.springframework.boot.autoconfigure.data.jdbc.JdbcRepositoriesAutoConfiguration$SpringBootJdbcConfiguration$$EnhancerBySpringCGLIB$$1dff0af6.CGLIB$jdbcDialect$1(<generated>)
+	at org.springframework.boot.autoconfigure.data.jdbc.JdbcRepositoriesAutoConfiguration$SpringBootJdbcConfiguration$$EnhancerBySpringCGLIB$$1dff0af6$$FastClassBySpringCGLIB$$658e18ec.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at org.springframework.boot.autoconfigure.data.jdbc.JdbcRepositoriesAutoConfiguration$SpringBootJdbcConfiguration$$EnhancerBySpringCGLIB$$1dff0af6.jdbcDialect(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 35 common frames omitted
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'studnetdetails'
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2191)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2222)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2017)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:779)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:389)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:358)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:477)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:560)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:158)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:116)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:79)
+	... 59 common frames omitted
+2023-12-18 22:22:37 INFO  [EntryPoint.java:34] Initializing Spring Boot!
+2023-12-18 22:22:38 INFO  [StartupInfoLogger.java:55] Starting EntryPoint on DESKTOP-SIV9206 with PID 264 (G:\studentDetails\target\classes started by user in G:\studentDetails)
+2023-12-18 22:22:38 INFO  [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2023-12-18 22:22:39 INFO  [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-18 22:22:39 INFO  [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-12-18 22:22:39 INFO  [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 22ms. Found 0 JDBC repository interfaces.
+2023-12-18 22:22:39 INFO  [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-18 22:22:39 INFO  [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2023-12-18 22:22:39 INFO  [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 2ms. Found 0 JPA repository interfaces.
+2023-12-18 22:22:40 INFO  [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2023-12-18 22:22:40 INFO  [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-18 22:22:40 INFO  [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-12-18 22:22:40 INFO  [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.36]
+2023-12-18 22:22:40 INFO  [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-12-18 22:22:40 INFO  [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 2320 ms
+2023-12-18 22:22:40 INFO  [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-18 22:22:40 INFO  [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-18 22:22:40 INFO  [Version.java:44] HHH000412: Hibernate ORM core version 5.4.17.Final
+2023-12-18 22:22:40 WARN  [JpaBaseConfiguration.java:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-18 22:22:40 INFO  [JavaReflectionManager.java:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-12-18 22:22:41 INFO  [PropertySourcedRequestMappingHandlerMapping.java:69] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-12-18 22:22:41 INFO  [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-12-18 22:22:41 INFO  [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2023-12-18 22:22:41 INFO  [Dialect.java:172] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-12-18 22:22:41 INFO  [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-18 22:22:41 INFO  [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-18 22:22:41 INFO  [DocumentationPluginsBootstrapper.java:147] Context refreshed
+2023-12-18 22:22:41 INFO  [DocumentationPluginsBootstrapper.java:150] Found 1 custom documentation plugin(s)
+2023-12-18 22:22:41 INFO  [ApiListingReferenceScanner.java:41] Scanning for api listing references
+2023-12-18 22:22:41 INFO  [DeferredRepositoryInitializationListener.java:49] Triggering deferred initialization of Spring Data repositories…
+2023-12-18 22:22:41 INFO  [DeferredRepositoryInitializationListener.java:53] Spring Data repositories initialized!
+2023-12-18 22:22:41 INFO  [StartupInfoLogger.java:61] Started EntryPoint in 3.842 seconds (JVM running for 4.622)
+2023-12-18 22:22:41 INFO  [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-18 22:22:41 INFO  [AbstractEntityManagerFactoryBean.java:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-18 22:23:43 INFO  [SpringApplicationAdminMXBeanRegistrar.java:159] Application shutdown requested.
+2023-12-18 22:23:43 INFO  [AbstractEntityManagerFactoryBean.java:598] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-18 22:23:43 INFO  [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-18 22:23:43 INFO  [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2023-12-18 22:23:43 INFO  [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2023-12-18 23:19:53 INFO  [EntryPoint.java:34] Initializing Spring Boot!
+2023-12-18 23:19:54 INFO  [StartupInfoLogger.java:55] Starting EntryPoint on DESKTOP-SIV9206 with PID 14580 (G:\studentDetails\target\classes started by user in G:\studentDetails)
+2023-12-18 23:19:54 INFO  [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2023-12-18 23:19:55 INFO  [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-18 23:19:55 INFO  [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-12-18 23:19:55 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.IBooks. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-18 23:19:55 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.IStudentClass. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-18 23:19:55 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.IStudentInfo. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-18 23:19:55 INFO  [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 52ms. Found 0 JDBC repository interfaces.
+2023-12-18 23:19:55 INFO  [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-18 23:19:55 INFO  [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2023-12-18 23:19:55 INFO  [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 33ms. Found 3 JPA repository interfaces.
+2023-12-18 23:19:56 INFO  [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2023-12-18 23:19:56 INFO  [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-18 23:19:56 INFO  [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-12-18 23:19:56 INFO  [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.36]
+2023-12-18 23:19:56 INFO  [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-12-18 23:19:56 INFO  [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 1787 ms
+2023-12-18 23:19:56 INFO  [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-18 23:19:56 INFO  [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-18 23:19:56 INFO  [Version.java:44] HHH000412: Hibernate ORM core version 5.4.17.Final
+2023-12-18 23:19:56 WARN  [JpaBaseConfiguration.java:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-18 23:19:56 INFO  [JavaReflectionManager.java:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-12-18 23:19:57 INFO  [PropertySourcedRequestMappingHandlerMapping.java:69] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-12-18 23:19:57 INFO  [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-12-18 23:19:57 INFO  [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2023-12-18 23:19:57 INFO  [Dialect.java:172] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-12-18 23:19:57 INFO  [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-18 23:19:57 INFO  [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-18 23:19:57 INFO  [DocumentationPluginsBootstrapper.java:147] Context refreshed
+2023-12-18 23:19:57 INFO  [DocumentationPluginsBootstrapper.java:150] Found 1 custom documentation plugin(s)
+2023-12-18 23:19:57 INFO  [ApiListingReferenceScanner.java:41] Scanning for api listing references
+2023-12-18 23:19:57 INFO  [DeferredRepositoryInitializationListener.java:49] Triggering deferred initialization of Spring Data repositories…
+2023-12-18 23:19:57 WARN  [AbstractApplicationContext.java:559] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'IBooks' defined in com.wedevol.emptyspringrest.repository.IBooks defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaMappingContext' while setting bean property 'mappingContext'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: com.wedevol.emptyspringrest.entity.StudentModel.studnetsName in com.wedevol.emptyspringrest.entity.BooksModel.studentModels
+2023-12-18 23:19:57 INFO  [AbstractEntityManagerFactoryBean.java:598] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-18 23:19:57 WARN  [DisposableBeanAdapter.java:267] Invocation of destroy method failed on bean with name 'entityManagerFactory': org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: com.wedevol.emptyspringrest.entity.StudentModel.studnetsName in com.wedevol.emptyspringrest.entity.BooksModel.studentModels
+2023-12-18 23:19:57 INFO  [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-18 23:19:57 INFO  [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2023-12-18 23:19:57 INFO  [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2023-12-18 23:19:57 INFO  [DirectJDKLog.java:173] Pausing ProtocolHandler ["http-nio-8080"]
+2023-12-18 23:19:57 INFO  [DirectJDKLog.java:173] Stopping service [Tomcat]
+2023-12-18 23:19:57 INFO  [DirectJDKLog.java:173] Stopping ProtocolHandler ["http-nio-8080"]
+2023-12-18 23:19:57 INFO  [DirectJDKLog.java:173] Destroying ProtocolHandler ["http-nio-8080"]
+2023-12-18 23:19:57 INFO  [ConditionEvaluationReportLoggingListener.java:136] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-12-18 23:19:57 ERROR [SpringApplication.java:837] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'IBooks' defined in com.wedevol.emptyspringrest.repository.IBooks defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaMappingContext' while setting bean property 'mappingContext'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: com.wedevol.emptyspringrest.entity.StudentModel.studnetsName in com.wedevol.emptyspringrest.entity.BooksModel.studentModels
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:342)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1699)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1444)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:621)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:609)
+	at org.springframework.data.repository.config.DeferredRepositoryInitializationListener.onApplicationEvent(DeferredRepositoryInitializationListener.java:51)
+	at org.springframework.data.repository.config.DeferredRepositoryInitializationListener.onApplicationEvent(DeferredRepositoryInitializationListener.java:36)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:404)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:361)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:898)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:554)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.wedevol.emptyspringrest.EntryPoint.main(EntryPoint.java:35)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: com.wedevol.emptyspringrest.entity.StudentModel.studnetsName in com.wedevol.emptyspringrest.entity.BooksModel.studentModels
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330)
+	... 28 common frames omitted
+Caused by: org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: com.wedevol.emptyspringrest.entity.StudentModel.studnetsName in com.wedevol.emptyspringrest.entity.BooksModel.studentModels
+	at org.hibernate.cfg.annotations.CollectionBinder.bindStarToManySecondPass(CollectionBinder.java:844)
+	at org.hibernate.cfg.annotations.CollectionBinder$1.secondPass(CollectionBinder.java:795)
+	at org.hibernate.cfg.CollectionSecondPass.doSecondPass(CollectionSecondPass.java:53)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1693)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1661)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:286)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1224)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1255)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2023-12-18 23:24:34 INFO  [EntryPoint.java:34] Initializing Spring Boot!
+2023-12-18 23:24:34 INFO  [StartupInfoLogger.java:55] Starting EntryPoint on DESKTOP-SIV9206 with PID 11032 (G:\studentDetails\target\classes started by user in G:\studentDetails)
+2023-12-18 23:24:34 INFO  [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2023-12-18 23:24:35 INFO  [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-18 23:24:35 INFO  [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-12-18 23:24:36 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.IBooks. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-18 23:24:36 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.IStudentClass. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-18 23:24:36 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.IStudentInfo. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-18 23:24:36 INFO  [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 47ms. Found 0 JDBC repository interfaces.
+2023-12-18 23:24:36 INFO  [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-18 23:24:36 INFO  [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2023-12-18 23:24:36 INFO  [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 27ms. Found 3 JPA repository interfaces.
+2023-12-18 23:24:36 INFO  [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2023-12-18 23:24:36 INFO  [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-18 23:24:36 INFO  [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-12-18 23:24:36 INFO  [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.36]
+2023-12-18 23:24:36 INFO  [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-12-18 23:24:36 INFO  [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 2084 ms
+2023-12-18 23:24:37 INFO  [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-18 23:24:37 INFO  [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-18 23:24:37 INFO  [Version.java:44] HHH000412: Hibernate ORM core version 5.4.17.Final
+2023-12-18 23:24:37 WARN  [JpaBaseConfiguration.java:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-18 23:24:37 INFO  [JavaReflectionManager.java:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-12-18 23:24:37 INFO  [PropertySourcedRequestMappingHandlerMapping.java:69] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-12-18 23:24:37 INFO  [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-12-18 23:24:38 INFO  [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2023-12-18 23:24:38 INFO  [Dialect.java:172] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-12-18 23:24:38 INFO  [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-18 23:24:38 INFO  [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-18 23:24:38 INFO  [DocumentationPluginsBootstrapper.java:147] Context refreshed
+2023-12-18 23:24:38 INFO  [DocumentationPluginsBootstrapper.java:150] Found 1 custom documentation plugin(s)
+2023-12-18 23:24:38 INFO  [ApiListingReferenceScanner.java:41] Scanning for api listing references
+2023-12-18 23:24:38 INFO  [DeferredRepositoryInitializationListener.java:49] Triggering deferred initialization of Spring Data repositories…
+2023-12-18 23:24:38 WARN  [AbstractApplicationContext.java:559] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'IBooks' defined in com.wedevol.emptyspringrest.repository.IBooks defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaMappingContext' while setting bean property 'mappingContext'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: com.wedevol.emptyspringrest.entity.StudentModel.studnetsName in com.wedevol.emptyspringrest.entity.BooksModel.studentModels
+2023-12-18 23:24:38 INFO  [AbstractEntityManagerFactoryBean.java:598] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-18 23:24:38 WARN  [DisposableBeanAdapter.java:267] Invocation of destroy method failed on bean with name 'entityManagerFactory': org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: com.wedevol.emptyspringrest.entity.StudentModel.studnetsName in com.wedevol.emptyspringrest.entity.BooksModel.studentModels
+2023-12-18 23:24:38 INFO  [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-18 23:24:38 INFO  [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2023-12-18 23:24:38 INFO  [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2023-12-18 23:24:38 INFO  [DirectJDKLog.java:173] Pausing ProtocolHandler ["http-nio-8080"]
+2023-12-18 23:24:38 INFO  [DirectJDKLog.java:173] Stopping service [Tomcat]
+2023-12-18 23:24:38 INFO  [DirectJDKLog.java:173] Stopping ProtocolHandler ["http-nio-8080"]
+2023-12-18 23:24:38 INFO  [DirectJDKLog.java:173] Destroying ProtocolHandler ["http-nio-8080"]
+2023-12-18 23:24:38 INFO  [ConditionEvaluationReportLoggingListener.java:136] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-12-18 23:24:38 ERROR [SpringApplication.java:837] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'IBooks' defined in com.wedevol.emptyspringrest.repository.IBooks defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaMappingContext' while setting bean property 'mappingContext'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: com.wedevol.emptyspringrest.entity.StudentModel.studnetsName in com.wedevol.emptyspringrest.entity.BooksModel.studentModels
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:342)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1699)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1444)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:621)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:609)
+	at org.springframework.data.repository.config.DeferredRepositoryInitializationListener.onApplicationEvent(DeferredRepositoryInitializationListener.java:51)
+	at org.springframework.data.repository.config.DeferredRepositoryInitializationListener.onApplicationEvent(DeferredRepositoryInitializationListener.java:36)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:404)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:361)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:898)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:554)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.wedevol.emptyspringrest.EntryPoint.main(EntryPoint.java:35)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: com.wedevol.emptyspringrest.entity.StudentModel.studnetsName in com.wedevol.emptyspringrest.entity.BooksModel.studentModels
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330)
+	... 28 common frames omitted
+Caused by: org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: com.wedevol.emptyspringrest.entity.StudentModel.studnetsName in com.wedevol.emptyspringrest.entity.BooksModel.studentModels
+	at org.hibernate.cfg.annotations.CollectionBinder.bindStarToManySecondPass(CollectionBinder.java:844)
+	at org.hibernate.cfg.annotations.CollectionBinder$1.secondPass(CollectionBinder.java:795)
+	at org.hibernate.cfg.CollectionSecondPass.doSecondPass(CollectionSecondPass.java:53)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1693)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1661)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:286)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1224)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1255)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2023-12-18 23:36:58 INFO  [EntryPoint.java:34] Initializing Spring Boot!
+2023-12-18 23:36:59 INFO  [StartupInfoLogger.java:55] Starting EntryPoint on DESKTOP-SIV9206 with PID 12900 (G:\studentDetails\target\classes started by user in G:\studentDetails)
+2023-12-18 23:36:59 INFO  [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2023-12-18 23:37:00 INFO  [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-18 23:37:00 INFO  [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-12-18 23:37:00 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.IBooks. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-18 23:37:00 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.IStudentClass. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-18 23:37:00 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.IStudentInfo. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-18 23:37:00 INFO  [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 76ms. Found 0 JDBC repository interfaces.
+2023-12-18 23:37:00 INFO  [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-18 23:37:00 INFO  [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2023-12-18 23:37:00 INFO  [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 38ms. Found 3 JPA repository interfaces.
+2023-12-18 23:37:01 INFO  [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2023-12-18 23:37:01 INFO  [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-18 23:37:01 INFO  [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-12-18 23:37:01 INFO  [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.36]
+2023-12-18 23:37:01 INFO  [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-12-18 23:37:01 INFO  [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 2293 ms
+2023-12-18 23:37:02 INFO  [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-18 23:37:02 INFO  [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-18 23:37:02 INFO  [Version.java:44] HHH000412: Hibernate ORM core version 5.4.17.Final
+2023-12-18 23:37:02 WARN  [JpaBaseConfiguration.java:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-18 23:37:02 INFO  [JavaReflectionManager.java:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-12-18 23:37:02 INFO  [PropertySourcedRequestMappingHandlerMapping.java:69] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-12-18 23:37:02 INFO  [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-12-18 23:37:02 INFO  [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2023-12-18 23:37:02 INFO  [Dialect.java:172] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-12-18 23:37:02 INFO  [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-18 23:37:02 INFO  [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-18 23:37:02 INFO  [DocumentationPluginsBootstrapper.java:147] Context refreshed
+2023-12-18 23:37:02 INFO  [DocumentationPluginsBootstrapper.java:150] Found 1 custom documentation plugin(s)
+2023-12-18 23:37:02 INFO  [ApiListingReferenceScanner.java:41] Scanning for api listing references
+2023-12-18 23:37:02 INFO  [DeferredRepositoryInitializationListener.java:49] Triggering deferred initialization of Spring Data repositories…
+2023-12-18 23:37:02 WARN  [AbstractApplicationContext.java:559] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'IBooks' defined in com.wedevol.emptyspringrest.repository.IBooks defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaMappingContext' while setting bean property 'mappingContext'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: com.wedevol.emptyspringrest.entity.StudentClassModel, at table: students_info, for columns: [org.hibernate.mapping.Column(class_name)]
+2023-12-18 23:37:02 INFO  [AbstractEntityManagerFactoryBean.java:598] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-18 23:37:02 WARN  [DisposableBeanAdapter.java:267] Invocation of destroy method failed on bean with name 'entityManagerFactory': javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: com.wedevol.emptyspringrest.entity.StudentClassModel, at table: students_info, for columns: [org.hibernate.mapping.Column(class_name)]
+2023-12-18 23:37:02 INFO  [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-18 23:37:02 INFO  [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2023-12-18 23:37:02 INFO  [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2023-12-18 23:37:02 INFO  [DirectJDKLog.java:173] Pausing ProtocolHandler ["http-nio-8080"]
+2023-12-18 23:37:02 INFO  [DirectJDKLog.java:173] Stopping service [Tomcat]
+2023-12-18 23:37:02 INFO  [DirectJDKLog.java:173] Stopping ProtocolHandler ["http-nio-8080"]
+2023-12-18 23:37:02 INFO  [DirectJDKLog.java:173] Destroying ProtocolHandler ["http-nio-8080"]
+2023-12-18 23:37:03 INFO  [ConditionEvaluationReportLoggingListener.java:136] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-12-18 23:37:03 ERROR [SpringApplication.java:837] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'IBooks' defined in com.wedevol.emptyspringrest.repository.IBooks defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaMappingContext' while setting bean property 'mappingContext'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: com.wedevol.emptyspringrest.entity.StudentClassModel, at table: students_info, for columns: [org.hibernate.mapping.Column(class_name)]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:342)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1699)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1444)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:621)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:609)
+	at org.springframework.data.repository.config.DeferredRepositoryInitializationListener.onApplicationEvent(DeferredRepositoryInitializationListener.java:51)
+	at org.springframework.data.repository.config.DeferredRepositoryInitializationListener.onApplicationEvent(DeferredRepositoryInitializationListener.java:36)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:404)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:361)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:898)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:554)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.wedevol.emptyspringrest.EntryPoint.main(EntryPoint.java:35)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: com.wedevol.emptyspringrest.entity.StudentClassModel, at table: students_info, for columns: [org.hibernate.mapping.Column(class_name)]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330)
+	... 28 common frames omitted
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: com.wedevol.emptyspringrest.entity.StudentClassModel, at table: students_info, for columns: [org.hibernate.mapping.Column(class_name)]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:403)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: org.hibernate.MappingException: Could not determine type for: com.wedevol.emptyspringrest.entity.StudentClassModel, at table: students_info, for columns: [org.hibernate.mapping.Column(class_name)]
+	at org.hibernate.mapping.SimpleValue.getType(SimpleValue.java:499)
+	at org.hibernate.mapping.SimpleValue.isValid(SimpleValue.java:466)
+	at org.hibernate.mapping.Property.isValid(Property.java:227)
+	at org.hibernate.mapping.PersistentClass.validate(PersistentClass.java:624)
+	at org.hibernate.mapping.RootClass.validate(RootClass.java:267)
+	at org.hibernate.boot.internal.MetadataImpl.validate(MetadataImpl.java:354)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1259)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
+	... 4 common frames omitted
+2023-12-18 23:39:13 INFO  [EntryPoint.java:34] Initializing Spring Boot!
+2023-12-18 23:39:14 INFO  [StartupInfoLogger.java:55] Starting EntryPoint on DESKTOP-SIV9206 with PID 12956 (G:\studentDetails\target\classes started by user in G:\studentDetails)
+2023-12-18 23:39:14 INFO  [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2023-12-18 23:39:15 INFO  [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-18 23:39:15 INFO  [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-12-18 23:39:15 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.IBooks. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-18 23:39:15 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.IStudentClass. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-18 23:39:15 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.IStudentInfo. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-18 23:39:15 INFO  [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 38ms. Found 0 JDBC repository interfaces.
+2023-12-18 23:39:15 INFO  [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-18 23:39:15 INFO  [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2023-12-18 23:39:15 INFO  [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 29ms. Found 3 JPA repository interfaces.
+2023-12-18 23:39:16 INFO  [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2023-12-18 23:39:16 INFO  [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-18 23:39:16 INFO  [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-12-18 23:39:16 INFO  [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.36]
+2023-12-18 23:39:16 INFO  [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-12-18 23:39:16 INFO  [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 2223 ms
+2023-12-18 23:39:16 INFO  [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-18 23:39:16 INFO  [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-18 23:39:16 INFO  [Version.java:44] HHH000412: Hibernate ORM core version 5.4.17.Final
+2023-12-18 23:39:16 WARN  [JpaBaseConfiguration.java:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-18 23:39:17 INFO  [JavaReflectionManager.java:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-12-18 23:39:17 INFO  [PropertySourcedRequestMappingHandlerMapping.java:69] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-12-18 23:39:17 INFO  [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-12-18 23:39:17 INFO  [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2023-12-18 23:39:17 INFO  [Dialect.java:172] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-12-18 23:39:17 INFO  [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-18 23:39:17 INFO  [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-18 23:39:17 INFO  [DocumentationPluginsBootstrapper.java:147] Context refreshed
+2023-12-18 23:39:17 INFO  [DocumentationPluginsBootstrapper.java:150] Found 1 custom documentation plugin(s)
+2023-12-18 23:39:17 INFO  [ApiListingReferenceScanner.java:41] Scanning for api listing references
+2023-12-18 23:39:17 INFO  [DeferredRepositoryInitializationListener.java:49] Triggering deferred initialization of Spring Data repositories…
+2023-12-18 23:39:17 WARN  [AbstractApplicationContext.java:559] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'IBooks' defined in com.wedevol.emptyspringrest.repository.IBooks defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaMappingContext' while setting bean property 'mappingContext'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: com.wedevol.emptyspringrest.entity.StudentClassModel, at table: students_info, for columns: [org.hibernate.mapping.Column(class_name)]
+2023-12-18 23:39:17 INFO  [AbstractEntityManagerFactoryBean.java:598] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-18 23:39:17 WARN  [DisposableBeanAdapter.java:267] Invocation of destroy method failed on bean with name 'entityManagerFactory': javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: com.wedevol.emptyspringrest.entity.StudentClassModel, at table: students_info, for columns: [org.hibernate.mapping.Column(class_name)]
+2023-12-18 23:39:17 INFO  [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-18 23:39:17 INFO  [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2023-12-18 23:39:17 INFO  [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2023-12-18 23:39:17 INFO  [DirectJDKLog.java:173] Pausing ProtocolHandler ["http-nio-8080"]
+2023-12-18 23:39:17 INFO  [DirectJDKLog.java:173] Stopping service [Tomcat]
+2023-12-18 23:39:17 INFO  [DirectJDKLog.java:173] Stopping ProtocolHandler ["http-nio-8080"]
+2023-12-18 23:39:17 INFO  [DirectJDKLog.java:173] Destroying ProtocolHandler ["http-nio-8080"]
+2023-12-18 23:39:17 INFO  [ConditionEvaluationReportLoggingListener.java:136] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-12-18 23:39:17 ERROR [SpringApplication.java:837] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'IBooks' defined in com.wedevol.emptyspringrest.repository.IBooks defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaMappingContext' while setting bean property 'mappingContext'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: com.wedevol.emptyspringrest.entity.StudentClassModel, at table: students_info, for columns: [org.hibernate.mapping.Column(class_name)]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:342)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1699)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1444)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:621)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:609)
+	at org.springframework.data.repository.config.DeferredRepositoryInitializationListener.onApplicationEvent(DeferredRepositoryInitializationListener.java:51)
+	at org.springframework.data.repository.config.DeferredRepositoryInitializationListener.onApplicationEvent(DeferredRepositoryInitializationListener.java:36)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:404)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:361)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:898)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:554)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.wedevol.emptyspringrest.EntryPoint.main(EntryPoint.java:35)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: com.wedevol.emptyspringrest.entity.StudentClassModel, at table: students_info, for columns: [org.hibernate.mapping.Column(class_name)]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330)
+	... 28 common frames omitted
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: com.wedevol.emptyspringrest.entity.StudentClassModel, at table: students_info, for columns: [org.hibernate.mapping.Column(class_name)]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:403)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: org.hibernate.MappingException: Could not determine type for: com.wedevol.emptyspringrest.entity.StudentClassModel, at table: students_info, for columns: [org.hibernate.mapping.Column(class_name)]
+	at org.hibernate.mapping.SimpleValue.getType(SimpleValue.java:499)
+	at org.hibernate.mapping.SimpleValue.isValid(SimpleValue.java:466)
+	at org.hibernate.mapping.Property.isValid(Property.java:227)
+	at org.hibernate.mapping.PersistentClass.validate(PersistentClass.java:624)
+	at org.hibernate.mapping.RootClass.validate(RootClass.java:267)
+	at org.hibernate.boot.internal.MetadataImpl.validate(MetadataImpl.java:354)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1259)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
+	... 4 common frames omitted
+2023-12-18 23:41:28 INFO  [EntryPoint.java:34] Initializing Spring Boot!
+2023-12-18 23:41:28 INFO  [StartupInfoLogger.java:55] Starting EntryPoint on DESKTOP-SIV9206 with PID 8224 (G:\studentDetails\target\classes started by user in G:\studentDetails)
+2023-12-18 23:41:28 INFO  [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2023-12-18 23:41:29 INFO  [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-18 23:41:29 INFO  [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-12-18 23:41:29 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.IBooks. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-18 23:41:29 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.IStudentClass. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-18 23:41:29 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.IStudentInfo. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-18 23:41:29 INFO  [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 38ms. Found 0 JDBC repository interfaces.
+2023-12-18 23:41:29 INFO  [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-18 23:41:29 INFO  [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2023-12-18 23:41:29 INFO  [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 36ms. Found 3 JPA repository interfaces.
+2023-12-18 23:41:30 INFO  [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2023-12-18 23:41:30 INFO  [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-18 23:41:30 INFO  [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-12-18 23:41:30 INFO  [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.36]
+2023-12-18 23:41:31 INFO  [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-12-18 23:41:31 INFO  [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 2546 ms
+2023-12-18 23:41:31 INFO  [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-18 23:41:31 INFO  [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-18 23:41:31 INFO  [Version.java:44] HHH000412: Hibernate ORM core version 5.4.17.Final
+2023-12-18 23:41:31 WARN  [JpaBaseConfiguration.java:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-18 23:41:31 INFO  [JavaReflectionManager.java:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-12-18 23:41:31 INFO  [PropertySourcedRequestMappingHandlerMapping.java:69] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-12-18 23:41:31 INFO  [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-12-18 23:41:32 INFO  [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2023-12-18 23:41:32 INFO  [Dialect.java:172] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-12-18 23:41:32 INFO  [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-18 23:41:32 INFO  [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-18 23:41:32 INFO  [DocumentationPluginsBootstrapper.java:147] Context refreshed
+2023-12-18 23:41:32 INFO  [DocumentationPluginsBootstrapper.java:150] Found 1 custom documentation plugin(s)
+2023-12-18 23:41:32 INFO  [ApiListingReferenceScanner.java:41] Scanning for api listing references
+2023-12-18 23:41:32 INFO  [DeferredRepositoryInitializationListener.java:49] Triggering deferred initialization of Spring Data repositories…
+2023-12-18 23:41:32 WARN  [AbstractApplicationContext.java:559] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'IBooks' defined in com.wedevol.emptyspringrest.repository.IBooks defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaMappingContext' while setting bean property 'mappingContext'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: com.wedevol.emptyspringrest.entity.StudentClassModel, at table: students_info, for columns: [org.hibernate.mapping.Column(class_name)]
+2023-12-18 23:41:32 INFO  [AbstractEntityManagerFactoryBean.java:598] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-18 23:41:32 WARN  [DisposableBeanAdapter.java:267] Invocation of destroy method failed on bean with name 'entityManagerFactory': javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: com.wedevol.emptyspringrest.entity.StudentClassModel, at table: students_info, for columns: [org.hibernate.mapping.Column(class_name)]
+2023-12-18 23:41:32 INFO  [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-18 23:41:32 INFO  [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2023-12-18 23:41:32 INFO  [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2023-12-18 23:41:32 INFO  [DirectJDKLog.java:173] Pausing ProtocolHandler ["http-nio-8080"]
+2023-12-18 23:41:32 INFO  [DirectJDKLog.java:173] Stopping service [Tomcat]
+2023-12-18 23:41:32 INFO  [DirectJDKLog.java:173] Stopping ProtocolHandler ["http-nio-8080"]
+2023-12-18 23:41:32 INFO  [DirectJDKLog.java:173] Destroying ProtocolHandler ["http-nio-8080"]
+2023-12-18 23:41:32 INFO  [ConditionEvaluationReportLoggingListener.java:136] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-12-18 23:41:32 ERROR [SpringApplication.java:837] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'IBooks' defined in com.wedevol.emptyspringrest.repository.IBooks defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaMappingContext' while setting bean property 'mappingContext'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: com.wedevol.emptyspringrest.entity.StudentClassModel, at table: students_info, for columns: [org.hibernate.mapping.Column(class_name)]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:342)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1699)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1444)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:621)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:609)
+	at org.springframework.data.repository.config.DeferredRepositoryInitializationListener.onApplicationEvent(DeferredRepositoryInitializationListener.java:51)
+	at org.springframework.data.repository.config.DeferredRepositoryInitializationListener.onApplicationEvent(DeferredRepositoryInitializationListener.java:36)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:404)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:361)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:898)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:554)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.wedevol.emptyspringrest.EntryPoint.main(EntryPoint.java:35)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: com.wedevol.emptyspringrest.entity.StudentClassModel, at table: students_info, for columns: [org.hibernate.mapping.Column(class_name)]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330)
+	... 28 common frames omitted
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: com.wedevol.emptyspringrest.entity.StudentClassModel, at table: students_info, for columns: [org.hibernate.mapping.Column(class_name)]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:403)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: org.hibernate.MappingException: Could not determine type for: com.wedevol.emptyspringrest.entity.StudentClassModel, at table: students_info, for columns: [org.hibernate.mapping.Column(class_name)]
+	at org.hibernate.mapping.SimpleValue.getType(SimpleValue.java:499)
+	at org.hibernate.mapping.SimpleValue.isValid(SimpleValue.java:466)
+	at org.hibernate.mapping.Property.isValid(Property.java:227)
+	at org.hibernate.mapping.PersistentClass.validate(PersistentClass.java:624)
+	at org.hibernate.mapping.RootClass.validate(RootClass.java:267)
+	at org.hibernate.boot.internal.MetadataImpl.validate(MetadataImpl.java:354)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1259)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
+	... 4 common frames omitted
+2023-12-18 23:42:12 INFO  [EntryPoint.java:34] Initializing Spring Boot!
+2023-12-18 23:42:13 INFO  [StartupInfoLogger.java:55] Starting EntryPoint on DESKTOP-SIV9206 with PID 2488 (G:\studentDetails\target\classes started by user in G:\studentDetails)
+2023-12-18 23:42:13 INFO  [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2023-12-18 23:42:13 INFO  [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-18 23:42:13 INFO  [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-12-18 23:42:13 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.IBooks. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-18 23:42:13 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.IStudentClass. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-18 23:42:13 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.IStudentInfo. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-18 23:42:13 INFO  [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 69ms. Found 0 JDBC repository interfaces.
+2023-12-18 23:42:13 INFO  [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-18 23:42:13 INFO  [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2023-12-18 23:42:13 INFO  [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 30ms. Found 3 JPA repository interfaces.
+2023-12-18 23:42:14 INFO  [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2023-12-18 23:42:14 INFO  [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-18 23:42:14 INFO  [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-12-18 23:42:14 INFO  [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.36]
+2023-12-18 23:42:14 INFO  [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-12-18 23:42:14 INFO  [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 1600 ms
+2023-12-18 23:42:14 INFO  [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-18 23:42:15 INFO  [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-18 23:42:15 INFO  [Version.java:44] HHH000412: Hibernate ORM core version 5.4.17.Final
+2023-12-18 23:42:15 WARN  [JpaBaseConfiguration.java:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-18 23:42:15 INFO  [JavaReflectionManager.java:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-12-18 23:42:15 INFO  [PropertySourcedRequestMappingHandlerMapping.java:69] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-12-18 23:42:15 INFO  [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-12-18 23:42:15 INFO  [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2023-12-18 23:42:15 INFO  [Dialect.java:172] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-12-18 23:42:15 INFO  [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-18 23:42:15 INFO  [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-18 23:42:15 INFO  [DocumentationPluginsBootstrapper.java:147] Context refreshed
+2023-12-18 23:42:16 INFO  [DocumentationPluginsBootstrapper.java:150] Found 1 custom documentation plugin(s)
+2023-12-18 23:42:16 INFO  [ApiListingReferenceScanner.java:41] Scanning for api listing references
+2023-12-18 23:42:16 INFO  [DeferredRepositoryInitializationListener.java:49] Triggering deferred initialization of Spring Data repositories…
+2023-12-18 23:42:16 WARN  [AbstractApplicationContext.java:559] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'IStudentClass' defined in com.wedevol.emptyspringrest.repository.IStudentClass defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaMappingContext' while setting bean property 'mappingContext'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.List, at table: department_info, for columns: [org.hibernate.mapping.Column(studnets)]
+2023-12-18 23:42:16 INFO  [AbstractEntityManagerFactoryBean.java:598] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-18 23:42:16 WARN  [DisposableBeanAdapter.java:267] Invocation of destroy method failed on bean with name 'entityManagerFactory': javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.List, at table: department_info, for columns: [org.hibernate.mapping.Column(studnets)]
+2023-12-18 23:42:16 INFO  [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-18 23:42:16 INFO  [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2023-12-18 23:42:16 INFO  [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2023-12-18 23:42:16 INFO  [DirectJDKLog.java:173] Pausing ProtocolHandler ["http-nio-8080"]
+2023-12-18 23:42:16 INFO  [DirectJDKLog.java:173] Stopping service [Tomcat]
+2023-12-18 23:42:16 INFO  [DirectJDKLog.java:173] Stopping ProtocolHandler ["http-nio-8080"]
+2023-12-18 23:42:16 INFO  [DirectJDKLog.java:173] Destroying ProtocolHandler ["http-nio-8080"]
+2023-12-18 23:42:16 INFO  [ConditionEvaluationReportLoggingListener.java:136] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-12-18 23:42:16 ERROR [SpringApplication.java:837] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'IStudentClass' defined in com.wedevol.emptyspringrest.repository.IStudentClass defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaMappingContext' while setting bean property 'mappingContext'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.List, at table: department_info, for columns: [org.hibernate.mapping.Column(studnets)]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:342)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1699)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1444)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:621)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:609)
+	at org.springframework.data.repository.config.DeferredRepositoryInitializationListener.onApplicationEvent(DeferredRepositoryInitializationListener.java:51)
+	at org.springframework.data.repository.config.DeferredRepositoryInitializationListener.onApplicationEvent(DeferredRepositoryInitializationListener.java:36)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:404)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:361)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:898)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:554)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.wedevol.emptyspringrest.EntryPoint.main(EntryPoint.java:35)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.List, at table: department_info, for columns: [org.hibernate.mapping.Column(studnets)]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330)
+	... 28 common frames omitted
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.List, at table: department_info, for columns: [org.hibernate.mapping.Column(studnets)]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:403)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: org.hibernate.MappingException: Could not determine type for: java.util.List, at table: department_info, for columns: [org.hibernate.mapping.Column(studnets)]
+	at org.hibernate.mapping.SimpleValue.getType(SimpleValue.java:499)
+	at org.hibernate.mapping.SimpleValue.isValid(SimpleValue.java:466)
+	at org.hibernate.mapping.Property.isValid(Property.java:227)
+	at org.hibernate.mapping.PersistentClass.validate(PersistentClass.java:624)
+	at org.hibernate.mapping.RootClass.validate(RootClass.java:267)
+	at org.hibernate.boot.internal.MetadataImpl.validate(MetadataImpl.java:354)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1259)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
+	... 4 common frames omitted
+2023-12-18 23:46:03 INFO  [EntryPoint.java:34] Initializing Spring Boot!
+2023-12-18 23:46:04 INFO  [StartupInfoLogger.java:55] Starting EntryPoint on DESKTOP-SIV9206 with PID 9212 (G:\studentDetails\target\classes started by user in G:\studentDetails)
+2023-12-18 23:46:04 INFO  [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2023-12-18 23:46:05 INFO  [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-18 23:46:05 INFO  [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-12-18 23:46:05 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.IBooks. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-18 23:46:05 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.IStudentClass. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-18 23:46:05 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.IStudentInfo. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-18 23:46:05 INFO  [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 43ms. Found 0 JDBC repository interfaces.
+2023-12-18 23:46:05 INFO  [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-18 23:46:05 INFO  [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2023-12-18 23:46:05 INFO  [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 38ms. Found 3 JPA repository interfaces.
+2023-12-18 23:46:06 INFO  [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2023-12-18 23:46:06 INFO  [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-18 23:46:06 INFO  [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-12-18 23:46:06 INFO  [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.36]
+2023-12-18 23:46:06 INFO  [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-12-18 23:46:06 INFO  [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 2551 ms
+2023-12-18 23:46:07 INFO  [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-18 23:46:07 INFO  [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-18 23:46:07 INFO  [Version.java:44] HHH000412: Hibernate ORM core version 5.4.17.Final
+2023-12-18 23:46:07 WARN  [JpaBaseConfiguration.java:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-18 23:46:07 INFO  [JavaReflectionManager.java:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-12-18 23:46:07 INFO  [PropertySourcedRequestMappingHandlerMapping.java:69] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-12-18 23:46:07 INFO  [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-12-18 23:46:07 INFO  [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2023-12-18 23:46:07 INFO  [Dialect.java:172] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-12-18 23:46:08 INFO  [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-18 23:46:08 INFO  [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-18 23:46:08 INFO  [DocumentationPluginsBootstrapper.java:147] Context refreshed
+2023-12-18 23:46:08 INFO  [DocumentationPluginsBootstrapper.java:150] Found 1 custom documentation plugin(s)
+2023-12-18 23:46:08 INFO  [ApiListingReferenceScanner.java:41] Scanning for api listing references
+2023-12-18 23:46:08 INFO  [DeferredRepositoryInitializationListener.java:49] Triggering deferred initialization of Spring Data repositories…
+2023-12-18 23:46:08 WARN  [AbstractApplicationContext.java:559] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'IStudentInfo' defined in com.wedevol.emptyspringrest.repository.IStudentInfo defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaMappingContext' while setting bean property 'mappingContext'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.List, at table: department_info, for columns: [org.hibernate.mapping.Column(studnets)]
+2023-12-18 23:46:08 INFO  [AbstractEntityManagerFactoryBean.java:598] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-18 23:46:08 WARN  [DisposableBeanAdapter.java:267] Invocation of destroy method failed on bean with name 'entityManagerFactory': javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.List, at table: department_info, for columns: [org.hibernate.mapping.Column(studnets)]
+2023-12-18 23:46:08 INFO  [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-18 23:46:08 INFO  [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2023-12-18 23:46:08 INFO  [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2023-12-18 23:46:08 INFO  [DirectJDKLog.java:173] Pausing ProtocolHandler ["http-nio-8080"]
+2023-12-18 23:46:08 INFO  [DirectJDKLog.java:173] Stopping service [Tomcat]
+2023-12-18 23:46:08 INFO  [DirectJDKLog.java:173] Stopping ProtocolHandler ["http-nio-8080"]
+2023-12-18 23:46:08 INFO  [DirectJDKLog.java:173] Destroying ProtocolHandler ["http-nio-8080"]
+2023-12-18 23:46:08 INFO  [ConditionEvaluationReportLoggingListener.java:136] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-12-18 23:46:08 ERROR [SpringApplication.java:837] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'IStudentInfo' defined in com.wedevol.emptyspringrest.repository.IStudentInfo defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaMappingContext' while setting bean property 'mappingContext'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.List, at table: department_info, for columns: [org.hibernate.mapping.Column(studnets)]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:342)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1699)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1444)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:621)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:609)
+	at org.springframework.data.repository.config.DeferredRepositoryInitializationListener.onApplicationEvent(DeferredRepositoryInitializationListener.java:51)
+	at org.springframework.data.repository.config.DeferredRepositoryInitializationListener.onApplicationEvent(DeferredRepositoryInitializationListener.java:36)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:404)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:361)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:898)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:554)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.wedevol.emptyspringrest.EntryPoint.main(EntryPoint.java:35)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.List, at table: department_info, for columns: [org.hibernate.mapping.Column(studnets)]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330)
+	... 28 common frames omitted
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.List, at table: department_info, for columns: [org.hibernate.mapping.Column(studnets)]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:403)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: org.hibernate.MappingException: Could not determine type for: java.util.List, at table: department_info, for columns: [org.hibernate.mapping.Column(studnets)]
+	at org.hibernate.mapping.SimpleValue.getType(SimpleValue.java:499)
+	at org.hibernate.mapping.SimpleValue.isValid(SimpleValue.java:466)
+	at org.hibernate.mapping.Property.isValid(Property.java:227)
+	at org.hibernate.mapping.PersistentClass.validate(PersistentClass.java:624)
+	at org.hibernate.mapping.RootClass.validate(RootClass.java:267)
+	at org.hibernate.boot.internal.MetadataImpl.validate(MetadataImpl.java:354)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1259)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
+	... 4 common frames omitted
+2023-12-18 23:47:45 INFO  [EntryPoint.java:34] Initializing Spring Boot!
+2023-12-18 23:47:45 INFO  [StartupInfoLogger.java:55] Starting EntryPoint on DESKTOP-SIV9206 with PID 15404 (G:\studentDetails\target\classes started by user in G:\studentDetails)
+2023-12-18 23:47:45 INFO  [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2023-12-18 23:47:47 INFO  [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-18 23:47:47 INFO  [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-12-18 23:47:47 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.IBooks. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-18 23:47:47 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.IStudentClass. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-18 23:47:47 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.IStudentInfo. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-18 23:47:47 INFO  [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 100ms. Found 0 JDBC repository interfaces.
+2023-12-18 23:47:47 INFO  [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-18 23:47:47 INFO  [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2023-12-18 23:47:47 INFO  [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 124ms. Found 3 JPA repository interfaces.
+2023-12-18 23:48:16 INFO  [EntryPoint.java:34] Initializing Spring Boot!
+2023-12-18 23:48:16 INFO  [StartupInfoLogger.java:55] Starting EntryPoint on DESKTOP-SIV9206 with PID 7884 (G:\studentDetails\target\classes started by user in G:\studentDetails)
+2023-12-18 23:48:16 INFO  [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2023-12-18 23:48:18 INFO  [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-18 23:48:18 INFO  [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-12-18 23:48:18 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.IBooks. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-18 23:48:18 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.IStudentClass. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-18 23:48:18 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.IStudentInfo. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-18 23:48:18 INFO  [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 104ms. Found 0 JDBC repository interfaces.
+2023-12-18 23:48:18 INFO  [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-18 23:48:18 INFO  [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2023-12-18 23:48:18 INFO  [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 40ms. Found 3 JPA repository interfaces.
+2023-12-18 23:48:19 INFO  [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2023-12-18 23:48:19 INFO  [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-18 23:48:19 INFO  [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-12-18 23:48:19 INFO  [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.36]
+2023-12-18 23:48:19 INFO  [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-12-18 23:48:19 INFO  [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 2764 ms
+2023-12-18 23:48:19 INFO  [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-18 23:48:20 INFO  [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-18 23:48:20 INFO  [Version.java:44] HHH000412: Hibernate ORM core version 5.4.17.Final
+2023-12-18 23:48:20 WARN  [JpaBaseConfiguration.java:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-18 23:48:20 INFO  [JavaReflectionManager.java:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-12-18 23:48:20 INFO  [PropertySourcedRequestMappingHandlerMapping.java:69] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-12-18 23:48:20 INFO  [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-12-18 23:48:20 INFO  [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2023-12-18 23:48:20 INFO  [Dialect.java:172] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-12-18 23:48:20 INFO  [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-18 23:48:21 INFO  [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-18 23:48:21 INFO  [DocumentationPluginsBootstrapper.java:147] Context refreshed
+2023-12-18 23:48:21 INFO  [DocumentationPluginsBootstrapper.java:150] Found 1 custom documentation plugin(s)
+2023-12-18 23:48:21 INFO  [ApiListingReferenceScanner.java:41] Scanning for api listing references
+2023-12-18 23:48:21 INFO  [DeferredRepositoryInitializationListener.java:49] Triggering deferred initialization of Spring Data repositories…
+2023-12-18 23:48:21 WARN  [AbstractApplicationContext.java:559] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'IStudentInfo' defined in com.wedevol.emptyspringrest.repository.IStudentInfo defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaMappingContext' while setting bean property 'mappingContext'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.List, at table: department_info, for columns: [org.hibernate.mapping.Column(studnets)]
+2023-12-18 23:48:21 INFO  [AbstractEntityManagerFactoryBean.java:598] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-18 23:48:21 WARN  [DisposableBeanAdapter.java:267] Invocation of destroy method failed on bean with name 'entityManagerFactory': javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.List, at table: department_info, for columns: [org.hibernate.mapping.Column(studnets)]
+2023-12-18 23:48:21 INFO  [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-18 23:48:21 INFO  [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2023-12-18 23:48:21 INFO  [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2023-12-18 23:48:21 INFO  [DirectJDKLog.java:173] Pausing ProtocolHandler ["http-nio-8080"]
+2023-12-18 23:48:21 INFO  [DirectJDKLog.java:173] Stopping service [Tomcat]
+2023-12-18 23:48:21 INFO  [DirectJDKLog.java:173] Stopping ProtocolHandler ["http-nio-8080"]
+2023-12-18 23:48:21 INFO  [DirectJDKLog.java:173] Destroying ProtocolHandler ["http-nio-8080"]
+2023-12-18 23:48:21 INFO  [ConditionEvaluationReportLoggingListener.java:136] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-12-18 23:48:21 ERROR [SpringApplication.java:837] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'IStudentInfo' defined in com.wedevol.emptyspringrest.repository.IStudentInfo defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaMappingContext' while setting bean property 'mappingContext'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.List, at table: department_info, for columns: [org.hibernate.mapping.Column(studnets)]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:342)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1699)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1444)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:621)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:609)
+	at org.springframework.data.repository.config.DeferredRepositoryInitializationListener.onApplicationEvent(DeferredRepositoryInitializationListener.java:51)
+	at org.springframework.data.repository.config.DeferredRepositoryInitializationListener.onApplicationEvent(DeferredRepositoryInitializationListener.java:36)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:404)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:361)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:898)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:554)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.wedevol.emptyspringrest.EntryPoint.main(EntryPoint.java:35)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.List, at table: department_info, for columns: [org.hibernate.mapping.Column(studnets)]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330)
+	... 28 common frames omitted
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.List, at table: department_info, for columns: [org.hibernate.mapping.Column(studnets)]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:403)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: org.hibernate.MappingException: Could not determine type for: java.util.List, at table: department_info, for columns: [org.hibernate.mapping.Column(studnets)]
+	at org.hibernate.mapping.SimpleValue.getType(SimpleValue.java:499)
+	at org.hibernate.mapping.SimpleValue.isValid(SimpleValue.java:466)
+	at org.hibernate.mapping.Property.isValid(Property.java:227)
+	at org.hibernate.mapping.PersistentClass.validate(PersistentClass.java:624)
+	at org.hibernate.mapping.RootClass.validate(RootClass.java:267)
+	at org.hibernate.boot.internal.MetadataImpl.validate(MetadataImpl.java:354)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1259)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
+	... 4 common frames omitted
+2023-12-18 23:49:05 INFO  [EntryPoint.java:34] Initializing Spring Boot!
+2023-12-18 23:49:06 INFO  [StartupInfoLogger.java:55] Starting EntryPoint on DESKTOP-SIV9206 with PID 16016 (G:\studentDetails\target\classes started by user in G:\studentDetails)
+2023-12-18 23:49:06 INFO  [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2023-12-18 23:49:08 INFO  [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-18 23:49:08 INFO  [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-12-18 23:49:08 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.IBooks. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-18 23:49:08 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.IStudentClass. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-18 23:49:08 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.IStudentInfo. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-18 23:49:08 INFO  [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 102ms. Found 0 JDBC repository interfaces.
+2023-12-18 23:49:08 INFO  [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-18 23:49:08 INFO  [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2023-12-18 23:49:08 INFO  [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 55ms. Found 3 JPA repository interfaces.
+2023-12-18 23:49:09 INFO  [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2023-12-18 23:49:09 INFO  [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-18 23:49:09 INFO  [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-12-18 23:49:09 INFO  [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.36]
+2023-12-18 23:49:09 INFO  [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-12-18 23:49:09 INFO  [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 3336 ms
+2023-12-18 23:49:10 INFO  [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-18 23:49:10 INFO  [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-18 23:49:10 INFO  [Version.java:44] HHH000412: Hibernate ORM core version 5.4.17.Final
+2023-12-18 23:49:10 WARN  [JpaBaseConfiguration.java:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-18 23:49:10 INFO  [JavaReflectionManager.java:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-12-18 23:49:10 INFO  [PropertySourcedRequestMappingHandlerMapping.java:69] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-12-18 23:49:10 INFO  [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-12-18 23:49:10 INFO  [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2023-12-18 23:49:10 INFO  [Dialect.java:172] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-12-18 23:49:10 INFO  [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-18 23:49:10 INFO  [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-18 23:49:10 INFO  [DocumentationPluginsBootstrapper.java:147] Context refreshed
+2023-12-18 23:49:11 INFO  [DocumentationPluginsBootstrapper.java:150] Found 1 custom documentation plugin(s)
+2023-12-18 23:49:11 INFO  [ApiListingReferenceScanner.java:41] Scanning for api listing references
+2023-12-18 23:49:11 INFO  [DeferredRepositoryInitializationListener.java:49] Triggering deferred initialization of Spring Data repositories…
+2023-12-18 23:49:13 WARN  [ExceptionHandlerLoggedImpl.java:27] GenerationTarget encountered exception accepting command : Error executing DDL "alter table books_info add constraint FKf10y7qk63jgl75pxii67cj7a1 foreign key (name) references students_info (enrollment_no)" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table books_info add constraint FKf10y7qk63jgl75pxii67cj7a1 foreign key (name) references students_info (enrollment_no)" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:559)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:504)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applyForeignKeys(AbstractSchemaMigrator.java:433)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:249)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:114)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:184)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:316)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:469)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1259)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.sql.SQLException: Can't create table `studentdetails`.`books_info` (errno: 150 "Foreign key constraint is incorrectly formed")
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:964)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2527)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2680)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2483)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2441)
+	at com.mysql.jdbc.StatementImpl.executeInternal(StatementImpl.java:845)
+	at com.mysql.jdbc.StatementImpl.execute(StatementImpl.java:745)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 17 common frames omitted
+2023-12-18 23:49:13 INFO  [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-18 23:49:13 INFO  [AbstractEntityManagerFactoryBean.java:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-18 23:49:13 INFO  [DeferredRepositoryInitializationListener.java:53] Spring Data repositories initialized!
+2023-12-18 23:49:13 INFO  [StartupInfoLogger.java:61] Started EntryPoint in 7.375 seconds (JVM running for 8.389)
+2023-12-18 23:49:41 INFO  [SpringApplicationAdminMXBeanRegistrar.java:159] Application shutdown requested.
+2023-12-18 23:49:41 INFO  [AbstractEntityManagerFactoryBean.java:598] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-18 23:49:41 INFO  [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-18 23:49:41 INFO  [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2023-12-18 23:49:42 INFO  [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2023-12-18 23:50:32 INFO  [EntryPoint.java:34] Initializing Spring Boot!
+2023-12-18 23:50:33 INFO  [StartupInfoLogger.java:55] Starting EntryPoint on DESKTOP-SIV9206 with PID 7172 (G:\studentDetails\target\classes started by user in G:\studentDetails)
+2023-12-18 23:50:33 INFO  [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2023-12-18 23:50:34 INFO  [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-18 23:50:34 INFO  [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-12-18 23:50:34 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.IBooks. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-18 23:50:34 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.IStudentClass. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-18 23:50:34 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.IStudentInfo. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-18 23:50:34 INFO  [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 40ms. Found 0 JDBC repository interfaces.
+2023-12-18 23:50:34 INFO  [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-18 23:50:34 INFO  [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2023-12-18 23:50:34 INFO  [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 32ms. Found 3 JPA repository interfaces.
+2023-12-18 23:50:35 INFO  [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2023-12-18 23:50:35 INFO  [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-18 23:50:35 INFO  [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-12-18 23:50:35 INFO  [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.36]
+2023-12-18 23:50:35 INFO  [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-12-18 23:50:35 INFO  [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 2608 ms
+2023-12-18 23:50:35 INFO  [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-18 23:50:36 INFO  [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-18 23:50:36 INFO  [Version.java:44] HHH000412: Hibernate ORM core version 5.4.17.Final
+2023-12-18 23:50:36 WARN  [JpaBaseConfiguration.java:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-18 23:50:36 INFO  [JavaReflectionManager.java:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-12-18 23:50:36 INFO  [PropertySourcedRequestMappingHandlerMapping.java:69] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-12-18 23:50:36 INFO  [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-12-18 23:50:36 INFO  [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2023-12-18 23:50:36 INFO  [Dialect.java:172] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-12-18 23:50:36 INFO  [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-18 23:50:36 INFO  [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-18 23:50:36 INFO  [DocumentationPluginsBootstrapper.java:147] Context refreshed
+2023-12-18 23:50:36 INFO  [DocumentationPluginsBootstrapper.java:150] Found 1 custom documentation plugin(s)
+2023-12-18 23:50:37 INFO  [ApiListingReferenceScanner.java:41] Scanning for api listing references
+2023-12-18 23:50:37 INFO  [DeferredRepositoryInitializationListener.java:49] Triggering deferred initialization of Spring Data repositories…
+2023-12-18 23:50:38 INFO  [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-18 23:50:38 INFO  [AbstractEntityManagerFactoryBean.java:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-18 23:50:38 INFO  [DeferredRepositoryInitializationListener.java:53] Spring Data repositories initialized!
+2023-12-18 23:50:38 INFO  [StartupInfoLogger.java:61] Started EntryPoint in 5.919 seconds (JVM running for 7.292)
+2023-12-18 23:54:35 INFO  [SpringApplicationAdminMXBeanRegistrar.java:159] Application shutdown requested.
+2023-12-18 23:54:35 INFO  [AbstractEntityManagerFactoryBean.java:598] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-18 23:54:35 INFO  [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-18 23:54:35 INFO  [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2023-12-18 23:54:35 INFO  [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.

@@ -1,0 +1,1306 @@
+2023-12-02 09:34:56 INFO  [EntryPoint.java:34] Initializing Spring Boot!
+2023-12-02 09:34:57 INFO  [StartupInfoLogger.java:55] Starting EntryPoint on DESKTOP-SIV9206 with PID 8032 (G:\emptyspringrestexample\target\classes started by user in G:\emptyspringrestexample)
+2023-12-02 09:34:57 INFO  [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2023-12-02 09:34:58 INFO  [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-02 09:34:58 INFO  [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-12-02 09:34:58 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.AuthorsRepo. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-02 09:34:58 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.BookRepo. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-02 09:34:58 INFO  [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 47ms. Found 0 JDBC repository interfaces.
+2023-12-02 09:34:58 INFO  [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-02 09:34:58 INFO  [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2023-12-02 09:34:58 INFO  [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 34ms. Found 2 JPA repository interfaces.
+2023-12-02 09:34:58 INFO  [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2023-12-02 09:34:58 INFO  [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-02 09:34:58 INFO  [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-12-02 09:34:58 INFO  [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.36]
+2023-12-02 09:34:58 INFO  [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-12-02 09:34:58 INFO  [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 1652 ms
+2023-12-02 09:34:58 INFO  [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-02 09:34:58 INFO  [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-02 09:34:59 INFO  [Version.java:44] HHH000412: Hibernate ORM core version 5.4.17.Final
+2023-12-02 09:34:59 WARN  [JpaBaseConfiguration.java:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-02 09:34:59 INFO  [JavaReflectionManager.java:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-12-02 09:34:59 INFO  [PropertySourcedRequestMappingHandlerMapping.java:69] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-12-02 09:34:59 INFO  [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-12-02 09:35:04 ERROR [HikariPool.java:593] HikariPool-1 - Exception during pool initialization.
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:989)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:341)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2189)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2222)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2017)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:779)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:389)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:358)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:477)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:560)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:176)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:118)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1224)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1255)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method)
+	at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:608)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:300)
+	... 42 common frames omitted
+2023-12-02 09:35:04 WARN  [JdbcEnvironmentInitiator.java:132] HHH000342: Could not obtain connection to query metadata : Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2023-12-02 09:35:04 INFO  [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-12-02 09:35:04 INFO  [Dialect.java:172] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-12-02 09:35:09 ERROR [HikariPool.java:593] HikariPool-1 - Exception during pool initialization.
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:989)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:341)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2189)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2222)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2017)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:779)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:389)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:358)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:477)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:560)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:158)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:116)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:79)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:324)
+	at org.springframework.data.jdbc.repository.config.DialectResolver$DefaultDialectProvider.getDialect(DialectResolver.java:102)
+	at org.springframework.data.jdbc.repository.config.DialectResolver.lambda$getDialect$0(DialectResolver.java:72)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.tryAdvance(ArrayList.java:1632)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.springframework.data.jdbc.repository.config.DialectResolver.getDialect(DialectResolver.java:74)
+	at org.springframework.data.jdbc.repository.config.AbstractJdbcConfiguration.jdbcDialect(AbstractJdbcConfiguration.java:144)
+	at org.springframework.boot.autoconfigure.data.jdbc.JdbcRepositoriesAutoConfiguration$SpringBootJdbcConfiguration$$EnhancerBySpringCGLIB$$c05992d2.CGLIB$jdbcDialect$0(<generated>)
+	at org.springframework.boot.autoconfigure.data.jdbc.JdbcRepositoriesAutoConfiguration$SpringBootJdbcConfiguration$$EnhancerBySpringCGLIB$$c05992d2$$FastClassBySpringCGLIB$$9ab0a1d0.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at org.springframework.boot.autoconfigure.data.jdbc.JdbcRepositoriesAutoConfiguration$SpringBootJdbcConfiguration$$EnhancerBySpringCGLIB$$c05992d2.jdbcDialect(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:650)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:635)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1304)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1224)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:884)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:538)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:893)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.wedevol.emptyspringrest.EntryPoint.main(EntryPoint.java:35)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method)
+	at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:608)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:300)
+	... 81 common frames omitted
+2023-12-02 09:35:09 INFO  [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-12-02 09:35:09 WARN  [AbstractApplicationContext.java:559] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jdbcConverter' defined in class path resource [org/springframework/boot/autoconfigure/data/jdbc/JdbcRepositoriesAutoConfiguration$SpringBootJdbcConfiguration.class]: Unsatisfied dependency expressed through method 'jdbcConverter' parameter 4; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jdbcDialect' defined in class path resource [org/springframework/boot/autoconfigure/data/jdbc/JdbcRepositoriesAutoConfiguration$SpringBootJdbcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.relational.core.dialect.Dialect]: Factory method 'jdbcDialect' threw exception; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2023-12-02 09:35:09 INFO  [AbstractEntityManagerFactoryBean.java:598] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-02 09:35:13 INFO  [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2023-12-02 09:35:13 INFO  [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-02 09:35:13 INFO  [AbstractEntityManagerFactoryBean.java:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-02 09:35:13 INFO  [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-02 09:35:13 INFO  [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2023-12-02 09:35:13 INFO  [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2023-12-02 09:35:13 INFO  [DirectJDKLog.java:173] Stopping service [Tomcat]
+2023-12-02 09:35:13 INFO  [ConditionEvaluationReportLoggingListener.java:136] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-12-02 09:35:13 ERROR [SpringApplication.java:837] Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jdbcConverter' defined in class path resource [org/springframework/boot/autoconfigure/data/jdbc/JdbcRepositoriesAutoConfiguration$SpringBootJdbcConfiguration.class]: Unsatisfied dependency expressed through method 'jdbcConverter' parameter 4; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jdbcDialect' defined in class path resource [org/springframework/boot/autoconfigure/data/jdbc/JdbcRepositoriesAutoConfiguration$SpringBootJdbcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.relational.core.dialect.Dialect]: Factory method 'jdbcDialect' threw exception; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:797)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:538)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:893)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.wedevol.emptyspringrest.EntryPoint.main(EntryPoint.java:35)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jdbcDialect' defined in class path resource [org/springframework/boot/autoconfigure/data/jdbc/JdbcRepositoriesAutoConfiguration$SpringBootJdbcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.relational.core.dialect.Dialect]: Factory method 'jdbcDialect' threw exception; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:635)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1304)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1224)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:884)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	... 20 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.relational.core.dialect.Dialect]: Factory method 'jdbcDialect' threw exception; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:650)
+	... 34 common frames omitted
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:82)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:324)
+	at org.springframework.data.jdbc.repository.config.DialectResolver$DefaultDialectProvider.getDialect(DialectResolver.java:102)
+	at org.springframework.data.jdbc.repository.config.DialectResolver.lambda$getDialect$0(DialectResolver.java:72)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.tryAdvance(ArrayList.java:1632)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.springframework.data.jdbc.repository.config.DialectResolver.getDialect(DialectResolver.java:74)
+	at org.springframework.data.jdbc.repository.config.AbstractJdbcConfiguration.jdbcDialect(AbstractJdbcConfiguration.java:144)
+	at org.springframework.boot.autoconfigure.data.jdbc.JdbcRepositoriesAutoConfiguration$SpringBootJdbcConfiguration$$EnhancerBySpringCGLIB$$c05992d2.CGLIB$jdbcDialect$0(<generated>)
+	at org.springframework.boot.autoconfigure.data.jdbc.JdbcRepositoriesAutoConfiguration$SpringBootJdbcConfiguration$$EnhancerBySpringCGLIB$$c05992d2$$FastClassBySpringCGLIB$$9ab0a1d0.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at org.springframework.boot.autoconfigure.data.jdbc.JdbcRepositoriesAutoConfiguration$SpringBootJdbcConfiguration$$EnhancerBySpringCGLIB$$c05992d2.jdbcDialect(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 35 common frames omitted
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:989)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:341)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2189)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2222)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2017)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:779)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:389)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:358)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:477)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:560)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:158)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:116)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:79)
+	... 59 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method)
+	at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:608)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:300)
+	... 81 common frames omitted
+2023-12-02 09:35:29 INFO  [EntryPoint.java:34] Initializing Spring Boot!
+2023-12-02 09:35:30 INFO  [StartupInfoLogger.java:55] Starting EntryPoint on DESKTOP-SIV9206 with PID 6744 (G:\emptyspringrestexample\target\classes started by user in G:\emptyspringrestexample)
+2023-12-02 09:35:30 INFO  [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2023-12-02 09:35:30 INFO  [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-02 09:35:30 INFO  [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-12-02 09:35:30 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.AuthorsRepo. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-02 09:35:30 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.BookRepo. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-02 09:35:30 INFO  [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 38ms. Found 0 JDBC repository interfaces.
+2023-12-02 09:35:30 INFO  [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-02 09:35:30 INFO  [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2023-12-02 09:35:30 INFO  [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 27ms. Found 2 JPA repository interfaces.
+2023-12-02 09:35:31 INFO  [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2023-12-02 09:35:31 INFO  [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-02 09:35:31 INFO  [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-12-02 09:35:31 INFO  [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.36]
+2023-12-02 09:35:31 INFO  [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-12-02 09:35:31 INFO  [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 1425 ms
+2023-12-02 09:35:31 INFO  [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-02 09:35:31 INFO  [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-02 09:35:31 INFO  [Version.java:44] HHH000412: Hibernate ORM core version 5.4.17.Final
+2023-12-02 09:35:31 INFO  [JavaReflectionManager.java:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-12-02 09:35:31 WARN  [JpaBaseConfiguration.java:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-02 09:35:31 INFO  [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-12-02 09:35:31 INFO  [PropertySourcedRequestMappingHandlerMapping.java:69] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-12-02 09:35:32 INFO  [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2023-12-02 09:35:32 INFO  [Dialect.java:172] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-12-02 09:35:32 INFO  [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-02 09:35:32 INFO  [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-02 09:35:32 INFO  [DocumentationPluginsBootstrapper.java:147] Context refreshed
+2023-12-02 09:35:32 INFO  [DocumentationPluginsBootstrapper.java:150] Found 1 custom documentation plugin(s)
+2023-12-02 09:35:32 INFO  [ApiListingReferenceScanner.java:41] Scanning for api listing references
+2023-12-02 09:35:32 INFO  [DeferredRepositoryInitializationListener.java:49] Triggering deferred initialization of Spring Data repositories…
+2023-12-02 09:35:32 INFO  [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-02 09:35:32 INFO  [AbstractEntityManagerFactoryBean.java:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-02 09:35:33 INFO  [DeferredRepositoryInitializationListener.java:53] Spring Data repositories initialized!
+2023-12-02 09:35:33 INFO  [StartupInfoLogger.java:61] Started EntryPoint in 3.304 seconds (JVM running for 4.556)
+2023-12-02 09:37:44 INFO  [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-02 09:37:44 INFO  [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2023-12-02 09:37:44 INFO  [FrameworkServlet.java:547] Completed initialization in 7 ms
+2023-12-02 09:38:31 WARN  [AbstractHandlerExceptionResolver.java:199] Resolved [org.springframework.web.bind.MissingPathVariableException: Missing URI template variable 'fileGroup' for method parameter of type String]
+2023-12-02 09:39:49 WARN  [AbstractHandlerExceptionResolver.java:199] Resolved [org.springframework.web.bind.MissingPathVariableException: Missing URI template variable 'fileGroup' for method parameter of type String]
+2023-12-02 09:48:17 INFO  [EntryPoint.java:34] Initializing Spring Boot!
+2023-12-02 09:48:17 INFO  [StartupInfoLogger.java:55] Starting EntryPoint on DESKTOP-SIV9206 with PID 12928 (G:\emptyspringrestexample\target\classes started by user in G:\emptyspringrestexample)
+2023-12-02 09:48:17 INFO  [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2023-12-02 09:48:18 INFO  [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-02 09:48:18 INFO  [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-12-02 09:48:18 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.AuthorsRepo. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-02 09:48:18 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.BookRepo. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-02 09:48:18 INFO  [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 37ms. Found 0 JDBC repository interfaces.
+2023-12-02 09:48:18 INFO  [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-02 09:48:18 INFO  [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2023-12-02 09:48:18 INFO  [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 49ms. Found 2 JPA repository interfaces.
+2023-12-02 09:48:19 INFO  [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2023-12-02 09:48:19 INFO  [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-02 09:48:19 INFO  [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-12-02 09:48:19 INFO  [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.36]
+2023-12-02 09:48:19 INFO  [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-12-02 09:48:19 INFO  [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 1600 ms
+2023-12-02 09:48:19 INFO  [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-02 09:48:19 INFO  [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-02 09:48:19 INFO  [Version.java:44] HHH000412: Hibernate ORM core version 5.4.17.Final
+2023-12-02 09:48:19 INFO  [JavaReflectionManager.java:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-12-02 09:48:19 WARN  [JpaBaseConfiguration.java:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-02 09:48:19 INFO  [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-12-02 09:48:19 INFO  [PropertySourcedRequestMappingHandlerMapping.java:69] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-12-02 09:48:19 INFO  [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2023-12-02 09:48:19 INFO  [Dialect.java:172] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-12-02 09:48:19 INFO  [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-02 09:48:19 INFO  [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-02 09:48:19 INFO  [DocumentationPluginsBootstrapper.java:147] Context refreshed
+2023-12-02 09:48:20 INFO  [DocumentationPluginsBootstrapper.java:150] Found 1 custom documentation plugin(s)
+2023-12-02 09:48:20 INFO  [ApiListingReferenceScanner.java:41] Scanning for api listing references
+2023-12-02 09:48:20 INFO  [DeferredRepositoryInitializationListener.java:49] Triggering deferred initialization of Spring Data repositories…
+2023-12-02 09:48:20 INFO  [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-02 09:48:20 INFO  [AbstractEntityManagerFactoryBean.java:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-02 09:48:20 INFO  [DeferredRepositoryInitializationListener.java:53] Spring Data repositories initialized!
+2023-12-02 09:48:20 INFO  [StartupInfoLogger.java:61] Started EntryPoint in 3.515 seconds (JVM running for 4.476)
+2023-12-02 09:48:45 INFO  [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-02 09:48:45 INFO  [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2023-12-02 09:48:45 INFO  [FrameworkServlet.java:547] Completed initialization in 7 ms
+2023-12-02 09:54:26 WARN  [AbstractHandlerExceptionResolver.java:199] Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<java.lang.Void> com.wedevol.emptyspringrest.controller.BooksController.uploadFile(java.lang.String,java.util.HashMap<java.lang.String, byte[]>)]
+2023-12-02 09:55:15 WARN  [AbstractHandlerExceptionResolver.java:199] Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<java.lang.Void> com.wedevol.emptyspringrest.controller.BooksController.uploadFile(java.lang.String,java.util.HashMap<java.lang.String, byte[]>)]
+2023-12-02 09:57:14 WARN  [AbstractHandlerExceptionResolver.java:199] Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<java.lang.Void> com.wedevol.emptyspringrest.controller.BooksController.uploadFile(java.lang.String,java.util.HashMap<java.lang.String, byte[]>)]
+2023-12-02 10:02:33 INFO  [SpringApplicationAdminMXBeanRegistrar.java:159] Application shutdown requested.
+2023-12-02 10:02:33 INFO  [AbstractEntityManagerFactoryBean.java:598] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-02 10:02:33 INFO  [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-02 10:02:33 INFO  [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2023-12-02 10:02:33 INFO  [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2023-12-02 10:02:52 INFO  [EntryPoint.java:34] Initializing Spring Boot!
+2023-12-02 10:02:52 INFO  [StartupInfoLogger.java:55] Starting EntryPoint on DESKTOP-SIV9206 with PID 7704 (G:\emptyspringrestexample\target\classes started by user in G:\emptyspringrestexample)
+2023-12-02 10:02:52 INFO  [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2023-12-02 10:02:53 INFO  [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-02 10:02:53 INFO  [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-12-02 10:02:53 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.AuthorsRepo. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-02 10:02:53 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.BookRepo. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-02 10:02:53 INFO  [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 36ms. Found 0 JDBC repository interfaces.
+2023-12-02 10:02:53 INFO  [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-02 10:02:53 INFO  [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2023-12-02 10:02:53 INFO  [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 28ms. Found 2 JPA repository interfaces.
+2023-12-02 10:02:54 INFO  [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2023-12-02 10:02:54 INFO  [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-02 10:02:54 INFO  [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-12-02 10:02:54 INFO  [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.36]
+2023-12-02 10:02:54 INFO  [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-12-02 10:02:54 INFO  [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 1651 ms
+2023-12-02 10:02:54 INFO  [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-02 10:02:54 INFO  [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-02 10:02:54 INFO  [Version.java:44] HHH000412: Hibernate ORM core version 5.4.17.Final
+2023-12-02 10:02:54 INFO  [JavaReflectionManager.java:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-12-02 10:02:54 WARN  [JpaBaseConfiguration.java:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-02 10:02:54 INFO  [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-12-02 10:02:54 INFO  [PropertySourcedRequestMappingHandlerMapping.java:69] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-12-02 10:02:55 INFO  [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2023-12-02 10:02:55 INFO  [Dialect.java:172] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-12-02 10:02:55 INFO  [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-02 10:02:55 INFO  [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-02 10:02:55 INFO  [DocumentationPluginsBootstrapper.java:147] Context refreshed
+2023-12-02 10:02:55 INFO  [DocumentationPluginsBootstrapper.java:150] Found 1 custom documentation plugin(s)
+2023-12-02 10:02:55 INFO  [ApiListingReferenceScanner.java:41] Scanning for api listing references
+2023-12-02 10:02:55 INFO  [DeferredRepositoryInitializationListener.java:49] Triggering deferred initialization of Spring Data repositories…
+2023-12-02 10:02:55 INFO  [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-02 10:02:55 INFO  [AbstractEntityManagerFactoryBean.java:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-02 10:02:56 INFO  [DeferredRepositoryInitializationListener.java:53] Spring Data repositories initialized!
+2023-12-02 10:02:56 INFO  [StartupInfoLogger.java:61] Started EntryPoint in 3.556 seconds (JVM running for 4.597)
+2023-12-02 10:03:06 INFO  [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-02 10:03:06 INFO  [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2023-12-02 10:03:06 INFO  [FrameworkServlet.java:547] Completed initialization in 8 ms
+2023-12-02 10:04:06 WARN  [AbstractHandlerExceptionResolver.java:199] Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<java.lang.Void> com.wedevol.emptyspringrest.controller.BooksController.uploadFile(java.lang.String,java.util.HashMap<java.lang.String, byte[]>)]
+2023-12-02 10:13:44 WARN  [AbstractHandlerExceptionResolver.java:199] Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<java.lang.Void> com.wedevol.emptyspringrest.controller.BooksController.uploadFile(java.lang.String,java.util.HashMap<java.lang.String, byte[]>)]
+2023-12-02 10:21:16 WARN  [AbstractHandlerExceptionResolver.java:199] Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<java.lang.Void> com.wedevol.emptyspringrest.controller.BooksController.uploadFile(java.lang.String,java.util.HashMap<java.lang.String, byte[]>)]
+2023-12-02 10:29:51 WARN  [AbstractHandlerExceptionResolver.java:199] Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<java.lang.Void> com.wedevol.emptyspringrest.controller.BooksController.uploadFile(java.lang.String,java.util.HashMap<java.lang.String, byte[]>)]
+2023-12-02 10:59:36 INFO  [EntryPoint.java:34] Initializing Spring Boot!
+2023-12-02 10:59:37 INFO  [StartupInfoLogger.java:55] Starting EntryPoint on DESKTOP-SIV9206 with PID 11732 (G:\emptyspringrestexample\target\classes started by user in G:\emptyspringrestexample)
+2023-12-02 10:59:37 INFO  [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2023-12-02 10:59:38 INFO  [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-02 10:59:38 INFO  [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-12-02 10:59:38 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.AuthorsRepo. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-02 10:59:38 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.BookRepo. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-02 10:59:38 INFO  [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 87ms. Found 0 JDBC repository interfaces.
+2023-12-02 10:59:38 INFO  [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-02 10:59:38 INFO  [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2023-12-02 10:59:39 INFO  [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 60ms. Found 2 JPA repository interfaces.
+2023-12-02 10:59:40 INFO  [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2023-12-02 10:59:40 INFO  [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-02 10:59:40 INFO  [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-12-02 10:59:40 INFO  [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.36]
+2023-12-02 10:59:40 INFO  [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-12-02 10:59:40 INFO  [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 3005 ms
+2023-12-02 10:59:40 INFO  [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-02 10:59:40 INFO  [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-02 10:59:40 INFO  [Version.java:44] HHH000412: Hibernate ORM core version 5.4.17.Final
+2023-12-02 10:59:40 INFO  [JavaReflectionManager.java:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-12-02 10:59:40 WARN  [JpaBaseConfiguration.java:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-02 10:59:41 INFO  [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-12-02 10:59:41 INFO  [PropertySourcedRequestMappingHandlerMapping.java:69] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-12-02 10:59:41 INFO  [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2023-12-02 10:59:41 INFO  [Dialect.java:172] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-12-02 10:59:41 INFO  [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-02 10:59:41 INFO  [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-02 10:59:41 INFO  [DocumentationPluginsBootstrapper.java:147] Context refreshed
+2023-12-02 10:59:41 INFO  [DocumentationPluginsBootstrapper.java:150] Found 1 custom documentation plugin(s)
+2023-12-02 10:59:41 INFO  [ApiListingReferenceScanner.java:41] Scanning for api listing references
+2023-12-02 10:59:42 INFO  [DeferredRepositoryInitializationListener.java:49] Triggering deferred initialization of Spring Data repositories…
+2023-12-02 10:59:43 INFO  [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-02 10:59:43 INFO  [AbstractEntityManagerFactoryBean.java:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-02 10:59:43 INFO  [DeferredRepositoryInitializationListener.java:53] Spring Data repositories initialized!
+2023-12-02 10:59:43 INFO  [StartupInfoLogger.java:61] Started EntryPoint in 7.3 seconds (JVM running for 9.075)
+2023-12-02 11:03:07 INFO  [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-02 11:03:07 INFO  [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2023-12-02 11:03:07 INFO  [FrameworkServlet.java:547] Completed initialization in 24 ms
+2023-12-02 11:04:38 WARN  [AbstractHandlerExceptionResolver.java:199] Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<java.lang.Void> com.wedevol.emptyspringrest.controller.BooksController.uploadFile(java.lang.String,java.util.HashMap<java.lang.String, byte[]>)]
+2023-12-02 11:22:42 WARN  [AbstractHandlerExceptionResolver.java:199] Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<java.lang.Void> com.wedevol.emptyspringrest.controller.BooksController.uploadFile(java.lang.String,java.util.HashMap<java.lang.String, byte[]>)]
+2023-12-02 11:25:15 WARN  [AbstractHandlerExceptionResolver.java:199] Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<java.lang.Void> com.wedevol.emptyspringrest.controller.BooksController.uploadFile(java.lang.String,java.util.HashMap<java.lang.String, byte[]>)]
+2023-12-02 11:26:32 WARN  [AbstractHandlerExceptionResolver.java:199] Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<java.lang.Void> com.wedevol.emptyspringrest.controller.BooksController.uploadFile(java.lang.String,java.util.HashMap<java.lang.String, byte[]>)]
+2023-12-02 11:28:14 INFO  [SpringApplicationAdminMXBeanRegistrar.java:159] Application shutdown requested.
+2023-12-02 11:28:14 INFO  [AbstractEntityManagerFactoryBean.java:598] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-02 11:28:14 INFO  [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-02 11:28:14 INFO  [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2023-12-02 11:28:14 INFO  [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2023-12-02 13:04:50 INFO  [EntryPoint.java:34] Initializing Spring Boot!
+2023-12-02 13:04:50 INFO  [StartupInfoLogger.java:55] Starting EntryPoint on DESKTOP-SIV9206 with PID 10612 (G:\emptyspringrestexample\target\classes started by user in G:\emptyspringrestexample)
+2023-12-02 13:04:50 INFO  [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2023-12-02 13:04:52 INFO  [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-02 13:04:52 INFO  [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-12-02 13:04:52 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.AuthorsRepo. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-02 13:04:52 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.BookRepo. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-02 13:04:52 INFO  [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 76ms. Found 0 JDBC repository interfaces.
+2023-12-02 13:04:52 INFO  [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-02 13:04:52 INFO  [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2023-12-02 13:04:52 INFO  [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 54ms. Found 2 JPA repository interfaces.
+2023-12-02 13:04:53 INFO  [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2023-12-02 13:04:53 INFO  [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-02 13:04:53 INFO  [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-12-02 13:04:53 INFO  [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.36]
+2023-12-02 13:04:53 INFO  [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-12-02 13:04:53 INFO  [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 2504 ms
+2023-12-02 13:04:53 INFO  [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-02 13:04:53 INFO  [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-02 13:04:53 INFO  [Version.java:44] HHH000412: Hibernate ORM core version 5.4.17.Final
+2023-12-02 13:04:53 INFO  [JavaReflectionManager.java:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-12-02 13:04:53 WARN  [JpaBaseConfiguration.java:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-02 13:04:54 INFO  [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-12-02 13:04:54 INFO  [PropertySourcedRequestMappingHandlerMapping.java:69] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-12-02 13:04:59 ERROR [HikariPool.java:593] HikariPool-1 - Exception during pool initialization.
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:989)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:341)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2189)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2222)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2017)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:779)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:389)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:358)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:477)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:560)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:176)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:118)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1224)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1255)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method)
+	at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:608)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:300)
+	... 42 common frames omitted
+2023-12-02 13:04:59 WARN  [JdbcEnvironmentInitiator.java:132] HHH000342: Could not obtain connection to query metadata : Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2023-12-02 13:04:59 INFO  [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-12-02 13:04:59 INFO  [Dialect.java:172] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-12-02 13:05:04 ERROR [HikariPool.java:593] HikariPool-1 - Exception during pool initialization.
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:989)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:341)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2189)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2222)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2017)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:779)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:389)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:358)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:477)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:560)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:158)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:116)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:79)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:324)
+	at org.springframework.data.jdbc.repository.config.DialectResolver$DefaultDialectProvider.getDialect(DialectResolver.java:102)
+	at org.springframework.data.jdbc.repository.config.DialectResolver.lambda$getDialect$0(DialectResolver.java:72)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.tryAdvance(ArrayList.java:1632)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.springframework.data.jdbc.repository.config.DialectResolver.getDialect(DialectResolver.java:74)
+	at org.springframework.data.jdbc.repository.config.AbstractJdbcConfiguration.jdbcDialect(AbstractJdbcConfiguration.java:144)
+	at org.springframework.boot.autoconfigure.data.jdbc.JdbcRepositoriesAutoConfiguration$SpringBootJdbcConfiguration$$EnhancerBySpringCGLIB$$50ce45e8.CGLIB$jdbcDialect$0(<generated>)
+	at org.springframework.boot.autoconfigure.data.jdbc.JdbcRepositoriesAutoConfiguration$SpringBootJdbcConfiguration$$EnhancerBySpringCGLIB$$50ce45e8$$FastClassBySpringCGLIB$$41234e09.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at org.springframework.boot.autoconfigure.data.jdbc.JdbcRepositoriesAutoConfiguration$SpringBootJdbcConfiguration$$EnhancerBySpringCGLIB$$50ce45e8.jdbcDialect(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:650)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:635)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1304)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1224)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:884)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:538)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:893)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.wedevol.emptyspringrest.EntryPoint.main(EntryPoint.java:35)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method)
+	at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:608)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:300)
+	... 81 common frames omitted
+2023-12-02 13:05:04 INFO  [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-12-02 13:05:04 WARN  [AbstractApplicationContext.java:559] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jdbcConverter' defined in class path resource [org/springframework/boot/autoconfigure/data/jdbc/JdbcRepositoriesAutoConfiguration$SpringBootJdbcConfiguration.class]: Unsatisfied dependency expressed through method 'jdbcConverter' parameter 4; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jdbcDialect' defined in class path resource [org/springframework/boot/autoconfigure/data/jdbc/JdbcRepositoriesAutoConfiguration$SpringBootJdbcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.relational.core.dialect.Dialect]: Factory method 'jdbcDialect' threw exception; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2023-12-02 13:05:04 INFO  [AbstractEntityManagerFactoryBean.java:598] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-02 13:06:09 INFO  [EntryPoint.java:34] Initializing Spring Boot!
+2023-12-02 13:06:09 INFO  [StartupInfoLogger.java:55] Starting EntryPoint on DESKTOP-SIV9206 with PID 13736 (G:\emptyspringrestexample\target\classes started by user in G:\emptyspringrestexample)
+2023-12-02 13:06:09 INFO  [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2023-12-02 13:06:10 INFO  [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-02 13:06:10 INFO  [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-12-02 13:06:10 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.AuthorsRepo. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-02 13:06:10 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.BookRepo. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-02 13:06:10 INFO  [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 67ms. Found 0 JDBC repository interfaces.
+2023-12-02 13:06:10 INFO  [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-02 13:06:10 INFO  [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2023-12-02 13:06:10 INFO  [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 67ms. Found 2 JPA repository interfaces.
+2023-12-02 13:06:12 INFO  [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2023-12-02 13:06:12 INFO  [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-02 13:06:12 INFO  [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-12-02 13:06:12 INFO  [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.36]
+2023-12-02 13:06:12 INFO  [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-12-02 13:06:12 INFO  [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 2422 ms
+2023-12-02 13:06:12 INFO  [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-02 13:06:12 INFO  [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-02 13:06:12 INFO  [Version.java:44] HHH000412: Hibernate ORM core version 5.4.17.Final
+2023-12-02 13:06:12 INFO  [JavaReflectionManager.java:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-12-02 13:06:12 WARN  [JpaBaseConfiguration.java:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-02 13:06:12 INFO  [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-12-02 13:06:12 INFO  [PropertySourcedRequestMappingHandlerMapping.java:69] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-12-02 13:06:12 INFO  [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2023-12-02 13:06:12 INFO  [Dialect.java:172] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-12-02 13:06:13 INFO  [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-02 13:06:13 INFO  [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-02 13:06:13 INFO  [DocumentationPluginsBootstrapper.java:147] Context refreshed
+2023-12-02 13:06:13 INFO  [DocumentationPluginsBootstrapper.java:150] Found 1 custom documentation plugin(s)
+2023-12-02 13:06:13 INFO  [ApiListingReferenceScanner.java:41] Scanning for api listing references
+2023-12-02 13:06:13 INFO  [DeferredRepositoryInitializationListener.java:49] Triggering deferred initialization of Spring Data repositories…
+2023-12-02 13:06:14 INFO  [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-02 13:06:14 INFO  [AbstractEntityManagerFactoryBean.java:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-02 13:06:14 INFO  [DeferredRepositoryInitializationListener.java:53] Spring Data repositories initialized!
+2023-12-02 13:06:14 INFO  [StartupInfoLogger.java:61] Started EntryPoint in 5.565 seconds (JVM running for 7.421)
+2023-12-02 13:06:44 INFO  [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-02 13:06:44 INFO  [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2023-12-02 13:06:44 INFO  [FrameworkServlet.java:547] Completed initialization in 26 ms
+2023-12-02 13:07:08 WARN  [AbstractHandlerExceptionResolver.java:199] Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/json;charset=UTF-8' not supported]
+2023-12-02 13:08:30 INFO  [SpringApplicationAdminMXBeanRegistrar.java:159] Application shutdown requested.
+2023-12-02 13:08:30 INFO  [AbstractEntityManagerFactoryBean.java:598] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-02 13:08:30 INFO  [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-02 13:08:30 INFO  [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2023-12-02 13:08:30 INFO  [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2023-12-02 13:08:41 INFO  [EntryPoint.java:34] Initializing Spring Boot!
+2023-12-02 13:08:41 INFO  [StartupInfoLogger.java:55] Starting EntryPoint on DESKTOP-SIV9206 with PID 10148 (G:\emptyspringrestexample\target\classes started by user in G:\emptyspringrestexample)
+2023-12-02 13:08:41 INFO  [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2023-12-02 13:08:43 INFO  [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-02 13:08:43 INFO  [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-12-02 13:08:43 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.AuthorsRepo. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-02 13:08:43 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.BookRepo. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-02 13:08:43 INFO  [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 34ms. Found 0 JDBC repository interfaces.
+2023-12-02 13:08:43 INFO  [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-02 13:08:43 INFO  [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2023-12-02 13:08:43 INFO  [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 33ms. Found 2 JPA repository interfaces.
+2023-12-02 13:08:43 INFO  [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2023-12-02 13:08:43 INFO  [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-02 13:08:43 INFO  [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-12-02 13:08:43 INFO  [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.36]
+2023-12-02 13:08:43 INFO  [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-12-02 13:08:43 INFO  [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 2397 ms
+2023-12-02 13:08:44 INFO  [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-02 13:08:44 INFO  [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-02 13:08:44 INFO  [Version.java:44] HHH000412: Hibernate ORM core version 5.4.17.Final
+2023-12-02 13:08:44 INFO  [JavaReflectionManager.java:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-12-02 13:08:44 WARN  [JpaBaseConfiguration.java:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-02 13:08:44 INFO  [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-12-02 13:08:44 INFO  [PropertySourcedRequestMappingHandlerMapping.java:69] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-12-02 13:08:44 INFO  [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2023-12-02 13:08:44 INFO  [Dialect.java:172] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-12-02 13:08:45 INFO  [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-02 13:08:45 INFO  [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-02 13:08:45 INFO  [DocumentationPluginsBootstrapper.java:147] Context refreshed
+2023-12-02 13:08:45 INFO  [DocumentationPluginsBootstrapper.java:150] Found 1 custom documentation plugin(s)
+2023-12-02 13:08:45 INFO  [ApiListingReferenceScanner.java:41] Scanning for api listing references
+2023-12-02 13:08:45 INFO  [DeferredRepositoryInitializationListener.java:49] Triggering deferred initialization of Spring Data repositories…
+2023-12-02 13:08:46 INFO  [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-02 13:08:46 INFO  [AbstractEntityManagerFactoryBean.java:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-02 13:08:46 INFO  [DeferredRepositoryInitializationListener.java:53] Spring Data repositories initialized!
+2023-12-02 13:08:47 INFO  [StartupInfoLogger.java:61] Started EntryPoint in 5.841 seconds (JVM running for 6.916)
+2023-12-02 13:09:47 INFO  [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-02 13:09:47 INFO  [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2023-12-02 13:09:47 INFO  [FrameworkServlet.java:547] Completed initialization in 11 ms
+2023-12-02 13:09:47 WARN  [AbstractHandlerExceptionResolver.java:199] Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/json;charset=UTF-8' not supported]
+2023-12-02 13:11:53 INFO  [SpringApplicationAdminMXBeanRegistrar.java:159] Application shutdown requested.
+2023-12-02 13:11:53 INFO  [AbstractEntityManagerFactoryBean.java:598] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-02 13:11:53 INFO  [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-02 13:11:53 INFO  [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2023-12-02 13:11:53 INFO  [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2023-12-02 13:12:12 INFO  [EntryPoint.java:34] Initializing Spring Boot!
+2023-12-02 13:12:12 INFO  [StartupInfoLogger.java:55] Starting EntryPoint on DESKTOP-SIV9206 with PID 11328 (G:\emptyspringrestexample\target\classes started by user in G:\emptyspringrestexample)
+2023-12-02 13:12:12 INFO  [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2023-12-02 13:12:13 INFO  [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-02 13:12:13 INFO  [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-12-02 13:12:13 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.AuthorsRepo. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-02 13:12:13 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.BookRepo. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-02 13:12:13 INFO  [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 62ms. Found 0 JDBC repository interfaces.
+2023-12-02 13:12:13 INFO  [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-02 13:12:13 INFO  [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2023-12-02 13:12:13 INFO  [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 47ms. Found 2 JPA repository interfaces.
+2023-12-02 13:12:14 INFO  [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2023-12-02 13:12:14 INFO  [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-02 13:12:14 INFO  [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-12-02 13:12:14 INFO  [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.36]
+2023-12-02 13:12:15 INFO  [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-12-02 13:12:15 INFO  [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 2234 ms
+2023-12-02 13:12:15 INFO  [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-02 13:12:15 INFO  [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-02 13:12:15 INFO  [Version.java:44] HHH000412: Hibernate ORM core version 5.4.17.Final
+2023-12-02 13:12:15 INFO  [JavaReflectionManager.java:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-12-02 13:12:15 WARN  [JpaBaseConfiguration.java:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-02 13:12:16 INFO  [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-12-02 13:12:16 INFO  [PropertySourcedRequestMappingHandlerMapping.java:69] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-12-02 13:12:16 INFO  [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2023-12-02 13:12:16 INFO  [Dialect.java:172] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-12-02 13:12:16 INFO  [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-02 13:12:16 INFO  [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-02 13:12:16 INFO  [DocumentationPluginsBootstrapper.java:147] Context refreshed
+2023-12-02 13:12:16 INFO  [DocumentationPluginsBootstrapper.java:150] Found 1 custom documentation plugin(s)
+2023-12-02 13:12:17 INFO  [ApiListingReferenceScanner.java:41] Scanning for api listing references
+2023-12-02 13:12:17 INFO  [DeferredRepositoryInitializationListener.java:49] Triggering deferred initialization of Spring Data repositories…
+2023-12-02 13:12:17 INFO  [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-02 13:12:17 INFO  [AbstractEntityManagerFactoryBean.java:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-02 13:12:18 INFO  [DeferredRepositoryInitializationListener.java:53] Spring Data repositories initialized!
+2023-12-02 13:12:18 INFO  [StartupInfoLogger.java:61] Started EntryPoint in 5.792 seconds (JVM running for 8.155)
+2023-12-02 13:13:04 INFO  [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-02 13:13:04 INFO  [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2023-12-02 13:13:04 INFO  [FrameworkServlet.java:547] Completed initialization in 7 ms
+2023-12-02 13:13:26 INFO  [SpringApplicationAdminMXBeanRegistrar.java:159] Application shutdown requested.
+2023-12-02 13:13:26 INFO  [AbstractEntityManagerFactoryBean.java:598] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-02 13:13:26 INFO  [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-02 13:13:26 INFO  [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2023-12-02 13:13:26 INFO  [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2023-12-02 13:13:41 INFO  [EntryPoint.java:34] Initializing Spring Boot!
+2023-12-02 13:13:42 INFO  [StartupInfoLogger.java:55] Starting EntryPoint on DESKTOP-SIV9206 with PID 4500 (G:\emptyspringrestexample\target\classes started by user in G:\emptyspringrestexample)
+2023-12-02 13:13:42 INFO  [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2023-12-02 13:13:44 INFO  [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-02 13:13:44 INFO  [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-12-02 13:13:45 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.AuthorsRepo. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-02 13:13:45 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.BookRepo. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-02 13:13:45 INFO  [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 86ms. Found 0 JDBC repository interfaces.
+2023-12-02 13:13:45 INFO  [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-02 13:13:45 INFO  [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2023-12-02 13:13:45 INFO  [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 71ms. Found 2 JPA repository interfaces.
+2023-12-02 13:13:46 INFO  [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2023-12-02 13:13:46 INFO  [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-02 13:13:46 INFO  [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-12-02 13:13:46 INFO  [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.36]
+2023-12-02 13:13:46 INFO  [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-12-02 13:13:46 INFO  [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 3772 ms
+2023-12-02 13:13:47 INFO  [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-02 13:13:47 INFO  [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-02 13:13:47 INFO  [Version.java:44] HHH000412: Hibernate ORM core version 5.4.17.Final
+2023-12-02 13:13:47 INFO  [JavaReflectionManager.java:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-12-02 13:13:47 WARN  [JpaBaseConfiguration.java:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-02 13:13:47 INFO  [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-12-02 13:13:47 INFO  [PropertySourcedRequestMappingHandlerMapping.java:69] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-12-02 13:13:48 INFO  [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2023-12-02 13:13:48 INFO  [Dialect.java:172] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-12-02 13:13:48 INFO  [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-02 13:13:48 INFO  [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-02 13:13:48 INFO  [DocumentationPluginsBootstrapper.java:147] Context refreshed
+2023-12-02 13:13:48 INFO  [DocumentationPluginsBootstrapper.java:150] Found 1 custom documentation plugin(s)
+2023-12-02 13:13:48 INFO  [ApiListingReferenceScanner.java:41] Scanning for api listing references
+2023-12-02 13:13:49 INFO  [DeferredRepositoryInitializationListener.java:49] Triggering deferred initialization of Spring Data repositories…
+2023-12-02 13:13:50 INFO  [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-02 13:13:50 INFO  [AbstractEntityManagerFactoryBean.java:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-02 13:13:50 INFO  [DeferredRepositoryInitializationListener.java:53] Spring Data repositories initialized!
+2023-12-02 13:13:50 INFO  [StartupInfoLogger.java:61] Started EntryPoint in 8.546 seconds (JVM running for 13.175)
+2023-12-02 13:16:26 INFO  [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-02 13:16:26 INFO  [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2023-12-02 13:16:26 INFO  [FrameworkServlet.java:547] Completed initialization in 28 ms
+2023-12-02 13:18:54 INFO  [EntryPoint.java:34] Initializing Spring Boot!
+2023-12-02 13:18:55 INFO  [StartupInfoLogger.java:55] Starting EntryPoint on DESKTOP-SIV9206 with PID 16064 (G:\emptyspringrestexample\target\classes started by user in G:\emptyspringrestexample)
+2023-12-02 13:18:55 INFO  [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2023-12-02 13:18:57 INFO  [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-02 13:18:57 INFO  [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-12-02 13:18:58 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.AuthorsRepo. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-02 13:18:58 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.BookRepo. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-02 13:18:58 INFO  [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 93ms. Found 0 JDBC repository interfaces.
+2023-12-02 13:18:58 INFO  [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-02 13:18:58 INFO  [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2023-12-02 13:18:58 INFO  [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 63ms. Found 2 JPA repository interfaces.
+2023-12-02 13:18:59 INFO  [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2023-12-02 13:18:59 INFO  [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-02 13:18:59 INFO  [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-12-02 13:18:59 INFO  [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.36]
+2023-12-02 13:18:59 INFO  [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-12-02 13:18:59 INFO  [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 3489 ms
+2023-12-02 13:18:59 INFO  [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-02 13:18:59 INFO  [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-02 13:18:59 INFO  [Version.java:44] HHH000412: Hibernate ORM core version 5.4.17.Final
+2023-12-02 13:18:59 INFO  [JavaReflectionManager.java:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-12-02 13:18:59 WARN  [JpaBaseConfiguration.java:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-02 13:19:00 INFO  [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-12-02 13:19:00 INFO  [PropertySourcedRequestMappingHandlerMapping.java:69] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-12-02 13:19:00 INFO  [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2023-12-02 13:19:00 INFO  [Dialect.java:172] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-12-02 13:19:00 INFO  [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-02 13:19:00 INFO  [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-02 13:19:00 INFO  [DocumentationPluginsBootstrapper.java:147] Context refreshed
+2023-12-02 13:19:00 INFO  [DocumentationPluginsBootstrapper.java:150] Found 1 custom documentation plugin(s)
+2023-12-02 13:19:00 INFO  [ApiListingReferenceScanner.java:41] Scanning for api listing references
+2023-12-02 13:19:00 INFO  [DeferredRepositoryInitializationListener.java:49] Triggering deferred initialization of Spring Data repositories…
+2023-12-02 13:19:01 INFO  [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-02 13:19:01 INFO  [AbstractEntityManagerFactoryBean.java:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-02 13:19:02 INFO  [DeferredRepositoryInitializationListener.java:53] Spring Data repositories initialized!
+2023-12-02 13:19:02 INFO  [StartupInfoLogger.java:61] Started EntryPoint in 6.865 seconds (JVM running for 9.02)
+2023-12-02 13:19:27 INFO  [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-02 13:19:27 INFO  [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2023-12-02 13:19:27 INFO  [FrameworkServlet.java:547] Completed initialization in 33 ms
+2023-12-02 13:19:52 INFO  [EntryPoint.java:34] Initializing Spring Boot!
+2023-12-02 13:19:53 INFO  [StartupInfoLogger.java:55] Starting EntryPoint on DESKTOP-SIV9206 with PID 14380 (G:\emptyspringrestexample\target\classes started by user in G:\emptyspringrestexample)
+2023-12-02 13:19:53 INFO  [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2023-12-02 13:19:55 INFO  [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-02 13:19:55 INFO  [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-12-02 13:19:55 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.AuthorsRepo. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-02 13:19:55 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.BookRepo. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-02 13:19:55 INFO  [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 84ms. Found 0 JDBC repository interfaces.
+2023-12-02 13:19:55 INFO  [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-02 13:19:55 INFO  [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2023-12-02 13:19:55 INFO  [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 81ms. Found 2 JPA repository interfaces.
+2023-12-02 13:19:56 INFO  [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2023-12-02 13:19:56 INFO  [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-02 13:19:56 INFO  [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-12-02 13:19:56 INFO  [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.36]
+2023-12-02 13:19:56 INFO  [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-12-02 13:19:56 INFO  [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 3476 ms
+2023-12-02 13:19:57 INFO  [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-02 13:19:57 INFO  [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-02 13:19:57 INFO  [Version.java:44] HHH000412: Hibernate ORM core version 5.4.17.Final
+2023-12-02 13:19:57 INFO  [JavaReflectionManager.java:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-12-02 13:19:57 WARN  [JpaBaseConfiguration.java:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-02 13:19:57 INFO  [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-12-02 13:19:57 INFO  [PropertySourcedRequestMappingHandlerMapping.java:69] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-12-02 13:19:58 INFO  [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2023-12-02 13:19:58 INFO  [Dialect.java:172] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-12-02 13:19:58 INFO  [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-02 13:19:58 INFO  [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-02 13:19:58 INFO  [DocumentationPluginsBootstrapper.java:147] Context refreshed
+2023-12-02 13:19:58 INFO  [DocumentationPluginsBootstrapper.java:150] Found 1 custom documentation plugin(s)
+2023-12-02 13:19:58 INFO  [ApiListingReferenceScanner.java:41] Scanning for api listing references
+2023-12-02 13:19:59 INFO  [DeferredRepositoryInitializationListener.java:49] Triggering deferred initialization of Spring Data repositories…
+2023-12-02 13:20:00 INFO  [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-02 13:20:00 INFO  [AbstractEntityManagerFactoryBean.java:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-02 13:20:00 INFO  [DeferredRepositoryInitializationListener.java:53] Spring Data repositories initialized!
+2023-12-02 13:20:00 INFO  [StartupInfoLogger.java:61] Started EntryPoint in 8.287 seconds (JVM running for 9.486)
+2023-12-02 13:20:08 INFO  [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-02 13:20:08 INFO  [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2023-12-02 13:20:08 INFO  [FrameworkServlet.java:547] Completed initialization in 23 ms
+2023-12-02 13:20:41 INFO  [SpringApplicationAdminMXBeanRegistrar.java:159] Application shutdown requested.
+2023-12-02 13:20:42 INFO  [AbstractEntityManagerFactoryBean.java:598] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-02 13:20:42 INFO  [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-02 13:20:42 INFO  [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2023-12-02 13:20:42 INFO  [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2023-12-02 13:23:21 INFO  [EntryPoint.java:34] Initializing Spring Boot!
+2023-12-02 13:23:21 INFO  [StartupInfoLogger.java:55] Starting EntryPoint on DESKTOP-SIV9206 with PID 10264 (G:\emptyspringrestexample\target\classes started by user in G:\emptyspringrestexample)
+2023-12-02 13:23:21 INFO  [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2023-12-02 13:23:23 INFO  [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-02 13:23:23 INFO  [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-12-02 13:23:23 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.AuthorsRepo. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-02 13:23:23 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.BookRepo. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-02 13:23:23 INFO  [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 73ms. Found 0 JDBC repository interfaces.
+2023-12-02 13:23:23 INFO  [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-02 13:23:23 INFO  [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2023-12-02 13:23:23 INFO  [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 62ms. Found 2 JPA repository interfaces.
+2023-12-02 13:23:24 INFO  [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2023-12-02 13:23:24 INFO  [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-02 13:23:24 INFO  [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-12-02 13:23:24 INFO  [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.36]
+2023-12-02 13:23:24 INFO  [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-12-02 13:23:24 INFO  [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 2569 ms
+2023-12-02 13:23:24 INFO  [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-02 13:23:24 INFO  [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-02 13:23:24 INFO  [Version.java:44] HHH000412: Hibernate ORM core version 5.4.17.Final
+2023-12-02 13:23:25 INFO  [JavaReflectionManager.java:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-12-02 13:23:25 WARN  [JpaBaseConfiguration.java:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-02 13:23:25 INFO  [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-12-02 13:23:25 INFO  [PropertySourcedRequestMappingHandlerMapping.java:69] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-12-02 13:23:25 INFO  [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2023-12-02 13:23:25 INFO  [Dialect.java:172] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-12-02 13:23:25 INFO  [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-02 13:23:25 INFO  [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-02 13:23:25 INFO  [DocumentationPluginsBootstrapper.java:147] Context refreshed
+2023-12-02 13:23:25 INFO  [DocumentationPluginsBootstrapper.java:150] Found 1 custom documentation plugin(s)
+2023-12-02 13:23:25 INFO  [ApiListingReferenceScanner.java:41] Scanning for api listing references
+2023-12-02 13:23:25 WARN  [ParameterDataTypeReader.java:86] Trying to infer dataType org.springframework.util.MultiValueMap<java.lang.String,java.lang.Object>
+2023-12-02 13:23:25 INFO  [DeferredRepositoryInitializationListener.java:49] Triggering deferred initialization of Spring Data repositories…
+2023-12-02 13:23:26 INFO  [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-02 13:23:26 INFO  [AbstractEntityManagerFactoryBean.java:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-02 13:23:26 INFO  [DeferredRepositoryInitializationListener.java:53] Spring Data repositories initialized!
+2023-12-02 13:23:26 INFO  [StartupInfoLogger.java:61] Started EntryPoint in 5.616 seconds (JVM running for 7.116)
+2023-12-02 13:23:31 INFO  [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-02 13:23:31 INFO  [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2023-12-02 13:23:31 INFO  [FrameworkServlet.java:547] Completed initialization in 13 ms
+2023-12-02 13:24:04 INFO  [SpringApplicationAdminMXBeanRegistrar.java:159] Application shutdown requested.
+2023-12-02 13:24:05 INFO  [AbstractEntityManagerFactoryBean.java:598] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-02 13:24:05 INFO  [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-02 13:24:05 INFO  [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2023-12-02 13:24:05 INFO  [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2023-12-02 13:25:27 INFO  [EntryPoint.java:34] Initializing Spring Boot!
+2023-12-02 13:25:28 INFO  [StartupInfoLogger.java:55] Starting EntryPoint on DESKTOP-SIV9206 with PID 3160 (G:\emptyspringrestexample\target\classes started by user in G:\emptyspringrestexample)
+2023-12-02 13:25:28 INFO  [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2023-12-02 13:25:29 INFO  [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-02 13:25:29 INFO  [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-12-02 13:25:30 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.AuthorsRepo. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-02 13:25:30 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.BookRepo. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-02 13:25:30 INFO  [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 47ms. Found 0 JDBC repository interfaces.
+2023-12-02 13:25:30 INFO  [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-02 13:25:30 INFO  [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2023-12-02 13:25:30 INFO  [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 29ms. Found 2 JPA repository interfaces.
+2023-12-02 13:25:30 INFO  [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2023-12-02 13:25:30 INFO  [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-02 13:25:30 INFO  [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-12-02 13:25:30 INFO  [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.36]
+2023-12-02 13:25:30 INFO  [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-12-02 13:25:30 INFO  [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 2482 ms
+2023-12-02 13:25:31 INFO  [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-02 13:25:31 INFO  [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-02 13:25:31 INFO  [Version.java:44] HHH000412: Hibernate ORM core version 5.4.17.Final
+2023-12-02 13:25:31 INFO  [JavaReflectionManager.java:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-12-02 13:25:31 WARN  [JpaBaseConfiguration.java:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-02 13:25:31 INFO  [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-12-02 13:25:31 INFO  [PropertySourcedRequestMappingHandlerMapping.java:69] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-12-02 13:25:31 INFO  [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2023-12-02 13:25:32 INFO  [Dialect.java:172] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-12-02 13:25:32 INFO  [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-02 13:25:32 INFO  [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-02 13:25:32 INFO  [DocumentationPluginsBootstrapper.java:147] Context refreshed
+2023-12-02 13:25:32 INFO  [DocumentationPluginsBootstrapper.java:150] Found 1 custom documentation plugin(s)
+2023-12-02 13:25:32 INFO  [ApiListingReferenceScanner.java:41] Scanning for api listing references
+2023-12-02 13:25:33 WARN  [ParameterDataTypeReader.java:86] Trying to infer dataType org.springframework.util.MultiValueMap<java.lang.String,java.lang.Object>
+2023-12-02 13:25:33 INFO  [DeferredRepositoryInitializationListener.java:49] Triggering deferred initialization of Spring Data repositories…
+2023-12-02 13:25:34 INFO  [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-02 13:25:34 INFO  [AbstractEntityManagerFactoryBean.java:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-02 13:25:34 INFO  [DeferredRepositoryInitializationListener.java:53] Spring Data repositories initialized!
+2023-12-02 13:25:34 INFO  [StartupInfoLogger.java:61] Started EntryPoint in 7.096 seconds (JVM running for 8.872)
+2023-12-02 13:25:48 INFO  [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-02 13:25:48 INFO  [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2023-12-02 13:25:48 INFO  [FrameworkServlet.java:547] Completed initialization in 22 ms
+2023-12-02 13:27:51 INFO  [EntryPoint.java:34] Initializing Spring Boot!
+2023-12-02 13:27:51 INFO  [StartupInfoLogger.java:55] Starting EntryPoint on DESKTOP-SIV9206 with PID 12480 (G:\emptyspringrestexample\target\classes started by user in G:\emptyspringrestexample)
+2023-12-02 13:27:51 INFO  [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2023-12-02 13:27:53 INFO  [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-02 13:27:53 INFO  [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-12-02 13:27:54 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.AuthorsRepo. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-02 13:27:54 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.BookRepo. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-02 13:27:54 INFO  [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 78ms. Found 0 JDBC repository interfaces.
+2023-12-02 13:27:54 INFO  [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-02 13:27:54 INFO  [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2023-12-02 13:27:54 INFO  [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 70ms. Found 2 JPA repository interfaces.
+2023-12-02 13:27:55 INFO  [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2023-12-02 13:27:55 INFO  [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-02 13:27:55 INFO  [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-12-02 13:27:55 INFO  [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.36]
+2023-12-02 13:27:55 INFO  [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-12-02 13:27:55 INFO  [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 3564 ms
+2023-12-02 13:27:55 INFO  [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-02 13:27:56 INFO  [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-02 13:27:56 INFO  [Version.java:44] HHH000412: Hibernate ORM core version 5.4.17.Final
+2023-12-02 13:27:56 WARN  [JpaBaseConfiguration.java:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-02 13:27:56 INFO  [JavaReflectionManager.java:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-12-02 13:27:56 INFO  [PropertySourcedRequestMappingHandlerMapping.java:69] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-12-02 13:27:56 INFO  [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-12-02 13:27:57 INFO  [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2023-12-02 13:27:57 INFO  [Dialect.java:172] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-12-02 13:27:57 INFO  [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-02 13:27:57 INFO  [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-02 13:27:57 INFO  [DocumentationPluginsBootstrapper.java:147] Context refreshed
+2023-12-02 13:27:57 INFO  [DocumentationPluginsBootstrapper.java:150] Found 1 custom documentation plugin(s)
+2023-12-02 13:27:57 INFO  [ApiListingReferenceScanner.java:41] Scanning for api listing references
+2023-12-02 13:27:57 WARN  [ParameterDataTypeReader.java:86] Trying to infer dataType org.springframework.util.MultiValueMap<java.lang.String,java.lang.Object>
+2023-12-02 13:27:57 INFO  [DeferredRepositoryInitializationListener.java:49] Triggering deferred initialization of Spring Data repositories…
+2023-12-02 13:27:59 INFO  [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-02 13:27:59 INFO  [AbstractEntityManagerFactoryBean.java:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-02 13:27:59 INFO  [DeferredRepositoryInitializationListener.java:53] Spring Data repositories initialized!
+2023-12-02 13:27:59 INFO  [StartupInfoLogger.java:61] Started EntryPoint in 8.566 seconds (JVM running for 10.084)
+2023-12-02 13:28:34 INFO  [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-02 13:28:34 INFO  [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2023-12-02 13:28:34 INFO  [FrameworkServlet.java:547] Completed initialization in 43 ms
+2023-12-02 13:28:34 WARN  [AbstractHandlerExceptionResolver.java:199] Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/json;charset=UTF-8' not supported]
+2023-12-02 13:29:37 INFO  [EntryPoint.java:34] Initializing Spring Boot!
+2023-12-02 13:29:38 INFO  [StartupInfoLogger.java:55] Starting EntryPoint on DESKTOP-SIV9206 with PID 6552 (G:\emptyspringrestexample\target\classes started by user in G:\emptyspringrestexample)
+2023-12-02 13:29:38 INFO  [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2023-12-02 13:29:40 INFO  [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-02 13:29:40 INFO  [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-12-02 13:29:40 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.AuthorsRepo. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-02 13:29:40 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.BookRepo. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-02 13:29:40 INFO  [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 88ms. Found 0 JDBC repository interfaces.
+2023-12-02 13:29:40 INFO  [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-02 13:29:40 INFO  [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2023-12-02 13:29:40 INFO  [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 60ms. Found 2 JPA repository interfaces.
+2023-12-02 13:29:41 INFO  [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2023-12-02 13:29:41 INFO  [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-02 13:29:41 INFO  [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-12-02 13:29:41 INFO  [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.36]
+2023-12-02 13:29:41 INFO  [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-12-02 13:29:41 INFO  [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 3191 ms
+2023-12-02 13:29:41 INFO  [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-02 13:29:41 INFO  [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-02 13:29:41 INFO  [Version.java:44] HHH000412: Hibernate ORM core version 5.4.17.Final
+2023-12-02 13:29:41 INFO  [JavaReflectionManager.java:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-12-02 13:29:41 WARN  [JpaBaseConfiguration.java:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-02 13:29:42 INFO  [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-12-02 13:29:42 INFO  [PropertySourcedRequestMappingHandlerMapping.java:69] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-12-02 13:29:42 INFO  [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2023-12-02 13:29:42 INFO  [Dialect.java:172] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-12-02 13:29:42 INFO  [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-02 13:29:42 INFO  [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-02 13:29:42 INFO  [DocumentationPluginsBootstrapper.java:147] Context refreshed
+2023-12-02 13:29:42 INFO  [DocumentationPluginsBootstrapper.java:150] Found 1 custom documentation plugin(s)
+2023-12-02 13:29:42 INFO  [ApiListingReferenceScanner.java:41] Scanning for api listing references
+2023-12-02 13:29:42 INFO  [DeferredRepositoryInitializationListener.java:49] Triggering deferred initialization of Spring Data repositories…
+2023-12-02 13:29:43 INFO  [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-02 13:29:43 INFO  [AbstractEntityManagerFactoryBean.java:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-02 13:29:43 INFO  [DeferredRepositoryInitializationListener.java:53] Spring Data repositories initialized!
+2023-12-02 13:29:43 INFO  [StartupInfoLogger.java:61] Started EntryPoint in 6.353 seconds (JVM running for 8.945)
+2023-12-02 13:29:54 INFO  [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-02 13:29:54 INFO  [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2023-12-02 13:29:54 INFO  [FrameworkServlet.java:547] Completed initialization in 39 ms
+2023-12-02 13:29:54 WARN  [AbstractHandlerExceptionResolver.java:199] Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/json;charset=UTF-8' not supported]
+2023-12-02 13:34:48 INFO  [EntryPoint.java:34] Initializing Spring Boot!
+2023-12-02 13:34:49 INFO  [StartupInfoLogger.java:55] Starting EntryPoint on DESKTOP-SIV9206 with PID 9696 (G:\emptyspringrestexample\target\classes started by user in G:\emptyspringrestexample)
+2023-12-02 13:34:49 INFO  [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2023-12-02 13:34:51 INFO  [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-02 13:34:51 INFO  [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-12-02 13:34:52 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.AuthorsRepo. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-02 13:34:52 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.BookRepo. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-02 13:34:52 INFO  [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 74ms. Found 0 JDBC repository interfaces.
+2023-12-02 13:34:52 INFO  [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-02 13:34:52 INFO  [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2023-12-02 13:34:52 INFO  [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 63ms. Found 2 JPA repository interfaces.
+2023-12-02 13:34:52 INFO  [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2023-12-02 13:34:52 INFO  [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-02 13:34:52 INFO  [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-12-02 13:34:52 INFO  [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.36]
+2023-12-02 13:34:53 INFO  [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-12-02 13:34:53 INFO  [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 3127 ms
+2023-12-02 13:34:53 INFO  [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-02 13:34:53 INFO  [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-02 13:34:53 INFO  [Version.java:44] HHH000412: Hibernate ORM core version 5.4.17.Final
+2023-12-02 13:34:53 INFO  [JavaReflectionManager.java:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-12-02 13:34:53 WARN  [JpaBaseConfiguration.java:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-02 13:34:53 INFO  [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-12-02 13:34:53 INFO  [PropertySourcedRequestMappingHandlerMapping.java:69] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-12-02 13:34:53 INFO  [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2023-12-02 13:34:53 INFO  [Dialect.java:172] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-12-02 13:34:54 INFO  [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-02 13:34:54 INFO  [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-02 13:34:54 INFO  [DocumentationPluginsBootstrapper.java:147] Context refreshed
+2023-12-02 13:34:54 INFO  [DocumentationPluginsBootstrapper.java:150] Found 1 custom documentation plugin(s)
+2023-12-02 13:34:54 INFO  [ApiListingReferenceScanner.java:41] Scanning for api listing references
+2023-12-02 13:34:54 INFO  [DeferredRepositoryInitializationListener.java:49] Triggering deferred initialization of Spring Data repositories…
+2023-12-02 13:34:55 INFO  [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-02 13:34:55 INFO  [AbstractEntityManagerFactoryBean.java:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-02 13:34:56 INFO  [DeferredRepositoryInitializationListener.java:53] Spring Data repositories initialized!
+2023-12-02 13:34:56 INFO  [StartupInfoLogger.java:61] Started EntryPoint in 7.047 seconds (JVM running for 9.429)
+2023-12-02 13:35:14 INFO  [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-02 13:35:14 INFO  [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2023-12-02 13:35:14 INFO  [FrameworkServlet.java:547] Completed initialization in 28 ms
+2023-12-02 13:35:14 WARN  [AbstractHandlerExceptionResolver.java:199] Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/json;charset=UTF-8' not supported]
+2023-12-02 13:39:38 INFO  [EntryPoint.java:34] Initializing Spring Boot!
+2023-12-02 13:39:39 INFO  [StartupInfoLogger.java:55] Starting EntryPoint on DESKTOP-SIV9206 with PID 13584 (G:\emptyspringrestexample\target\classes started by user in G:\emptyspringrestexample)
+2023-12-02 13:39:39 INFO  [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2023-12-02 13:39:40 INFO  [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-02 13:39:40 INFO  [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-12-02 13:39:40 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.AuthorsRepo. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-02 13:39:40 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.BookRepo. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-02 13:39:40 INFO  [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 45ms. Found 0 JDBC repository interfaces.
+2023-12-02 13:39:40 INFO  [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-02 13:39:40 INFO  [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2023-12-02 13:39:40 INFO  [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 45ms. Found 2 JPA repository interfaces.
+2023-12-02 13:39:41 INFO  [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2023-12-02 13:39:41 INFO  [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-02 13:39:41 INFO  [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-12-02 13:39:41 INFO  [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.36]
+2023-12-02 13:39:41 INFO  [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-12-02 13:39:41 INFO  [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 2382 ms
+2023-12-02 13:39:41 INFO  [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-02 13:39:42 INFO  [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-02 13:39:42 INFO  [Version.java:44] HHH000412: Hibernate ORM core version 5.4.17.Final
+2023-12-02 13:39:42 INFO  [JavaReflectionManager.java:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-12-02 13:39:42 WARN  [JpaBaseConfiguration.java:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-02 13:39:42 INFO  [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-12-02 13:39:42 INFO  [PropertySourcedRequestMappingHandlerMapping.java:69] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-12-02 13:39:43 INFO  [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2023-12-02 13:39:43 INFO  [Dialect.java:172] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-12-02 13:39:43 INFO  [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-02 13:39:43 INFO  [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-02 13:39:43 INFO  [DocumentationPluginsBootstrapper.java:147] Context refreshed
+2023-12-02 13:39:43 INFO  [DocumentationPluginsBootstrapper.java:150] Found 1 custom documentation plugin(s)
+2023-12-02 13:39:43 INFO  [ApiListingReferenceScanner.java:41] Scanning for api listing references
+2023-12-02 13:39:44 INFO  [DeferredRepositoryInitializationListener.java:49] Triggering deferred initialization of Spring Data repositories…
+2023-12-02 13:39:45 INFO  [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-02 13:39:45 INFO  [AbstractEntityManagerFactoryBean.java:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-02 13:39:45 INFO  [DeferredRepositoryInitializationListener.java:53] Spring Data repositories initialized!
+2023-12-02 13:39:45 INFO  [StartupInfoLogger.java:61] Started EntryPoint in 7.117 seconds (JVM running for 9.806)
+2023-12-02 13:39:49 INFO  [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-02 13:39:49 INFO  [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2023-12-02 13:39:49 INFO  [FrameworkServlet.java:547] Completed initialization in 20 ms
+2023-12-02 13:40:03 WARN  [AbstractHandlerExceptionResolver.java:199] Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/json;charset=UTF-8' not supported]
+2023-12-02 13:40:30 WARN  [AbstractHandlerExceptionResolver.java:199] Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/json;charset=UTF-8' not supported]
+2023-12-02 14:36:12 INFO  [EntryPoint.java:34] Initializing Spring Boot!
+2023-12-02 14:36:13 INFO  [StartupInfoLogger.java:55] Starting EntryPoint on DESKTOP-SIV9206 with PID 9872 (G:\emptyspringrestexample\target\classes started by user in G:\emptyspringrestexample)
+2023-12-02 14:36:13 INFO  [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2023-12-02 14:36:15 INFO  [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-02 14:36:15 INFO  [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-12-02 14:36:15 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.AuthorsRepo. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-02 14:36:15 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.BookRepo. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-02 14:36:15 INFO  [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 56ms. Found 0 JDBC repository interfaces.
+2023-12-02 14:36:15 INFO  [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-02 14:36:15 INFO  [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2023-12-02 14:36:15 INFO  [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 56ms. Found 2 JPA repository interfaces.
+2023-12-02 14:36:17 INFO  [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2023-12-02 14:36:17 INFO  [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-02 14:36:17 INFO  [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-12-02 14:36:17 INFO  [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.36]
+2023-12-02 14:36:17 INFO  [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-12-02 14:36:17 INFO  [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 3839 ms
+2023-12-02 14:36:17 INFO  [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-02 14:36:17 INFO  [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-02 14:36:17 INFO  [Version.java:44] HHH000412: Hibernate ORM core version 5.4.17.Final
+2023-12-02 14:36:18 INFO  [JavaReflectionManager.java:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-12-02 14:36:18 WARN  [JpaBaseConfiguration.java:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-02 14:36:18 INFO  [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-12-02 14:36:18 INFO  [PropertySourcedRequestMappingHandlerMapping.java:69] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-12-02 14:36:18 INFO  [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2023-12-02 14:36:18 INFO  [Dialect.java:172] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-12-02 14:36:19 INFO  [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-02 14:36:19 INFO  [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-02 14:36:19 INFO  [DocumentationPluginsBootstrapper.java:147] Context refreshed
+2023-12-02 14:36:19 INFO  [DocumentationPluginsBootstrapper.java:150] Found 1 custom documentation plugin(s)
+2023-12-02 14:36:19 INFO  [ApiListingReferenceScanner.java:41] Scanning for api listing references
+2023-12-02 14:36:19 INFO  [DeferredRepositoryInitializationListener.java:49] Triggering deferred initialization of Spring Data repositories…
+2023-12-02 14:36:21 INFO  [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-02 14:36:21 INFO  [AbstractEntityManagerFactoryBean.java:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-02 14:36:22 INFO  [DeferredRepositoryInitializationListener.java:53] Spring Data repositories initialized!
+2023-12-02 14:36:22 INFO  [StartupInfoLogger.java:61] Started EntryPoint in 9.4 seconds (JVM running for 11.323)
+2023-12-02 14:37:52 INFO  [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-02 14:37:52 INFO  [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2023-12-02 14:37:52 INFO  [FrameworkServlet.java:547] Completed initialization in 15 ms
+2023-12-02 14:39:04 INFO  [SpringApplicationAdminMXBeanRegistrar.java:159] Application shutdown requested.
+2023-12-02 14:39:04 INFO  [AbstractEntityManagerFactoryBean.java:598] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-02 14:39:04 INFO  [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-02 14:39:04 INFO  [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2023-12-02 14:39:04 INFO  [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2023-12-02 14:51:20 INFO  [EntryPoint.java:34] Initializing Spring Boot!
+2023-12-02 14:51:20 INFO  [StartupInfoLogger.java:55] Starting EntryPoint on DESKTOP-SIV9206 with PID 13512 (G:\emptyspringrestexample\target\classes started by user in G:\emptyspringrestexample)
+2023-12-02 14:51:20 INFO  [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2023-12-02 14:51:21 INFO  [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-02 14:51:21 INFO  [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-12-02 14:51:21 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.AuthorsRepo. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-02 14:51:21 INFO  [RepositoryConfigurationExtensionSupport.java:348] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.wedevol.emptyspringrest.repository.BookRepo. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-02 14:51:21 INFO  [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 36ms. Found 0 JDBC repository interfaces.
+2023-12-02 14:51:21 INFO  [RepositoryConfigurationDelegate.java:249] Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-02 14:51:21 INFO  [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2023-12-02 14:51:21 INFO  [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 32ms. Found 2 JPA repository interfaces.
+2023-12-02 14:51:22 INFO  [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2023-12-02 14:51:22 INFO  [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-02 14:51:22 INFO  [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-12-02 14:51:22 INFO  [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.36]
+2023-12-02 14:51:22 INFO  [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-12-02 14:51:22 INFO  [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 1717 ms
+2023-12-02 14:51:22 INFO  [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-02 14:51:22 INFO  [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-02 14:51:22 INFO  [Version.java:44] HHH000412: Hibernate ORM core version 5.4.17.Final
+2023-12-02 14:51:23 WARN  [JpaBaseConfiguration.java:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-02 14:51:23 INFO  [JavaReflectionManager.java:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-12-02 14:51:23 INFO  [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-12-02 14:51:23 INFO  [PropertySourcedRequestMappingHandlerMapping.java:69] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-12-02 14:51:23 INFO  [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2023-12-02 14:51:23 INFO  [Dialect.java:172] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-12-02 14:51:23 INFO  [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-02 14:51:23 INFO  [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-02 14:51:23 INFO  [DocumentationPluginsBootstrapper.java:147] Context refreshed
+2023-12-02 14:51:23 INFO  [DocumentationPluginsBootstrapper.java:150] Found 1 custom documentation plugin(s)
+2023-12-02 14:51:23 INFO  [ApiListingReferenceScanner.java:41] Scanning for api listing references
+2023-12-02 14:51:24 INFO  [DeferredRepositoryInitializationListener.java:49] Triggering deferred initialization of Spring Data repositories…
+2023-12-02 14:51:25 INFO  [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-02 14:51:25 INFO  [AbstractEntityManagerFactoryBean.java:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-02 14:51:25 INFO  [DeferredRepositoryInitializationListener.java:53] Spring Data repositories initialized!
+2023-12-02 14:51:25 INFO  [StartupInfoLogger.java:61] Started EntryPoint in 5.225 seconds (JVM running for 6.086)
+2023-12-02 14:51:41 INFO  [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-02 14:51:41 INFO  [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2023-12-02 14:51:41 INFO  [FrameworkServlet.java:547] Completed initialization in 10 ms
+2023-12-02 14:51:50 WARN  [AbstractHandlerExceptionResolver.java:199] Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/json;charset=UTF-8' not supported]
+2023-12-02 15:03:05 INFO  [SpringApplicationAdminMXBeanRegistrar.java:159] Application shutdown requested.
+2023-12-02 15:03:05 INFO  [AbstractEntityManagerFactoryBean.java:598] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-02 15:03:05 INFO  [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-02 15:03:05 INFO  [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2023-12-02 15:03:05 INFO  [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
