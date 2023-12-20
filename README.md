@@ -2,7 +2,7 @@
 
 ## I created APIs for Students Details related.
 
-## I implemented few parts in Project and also, I uploaded sample data in dbTables folder.
+## I implemented few parts in Project.
 
  > 1 Students
 		> http://localhost:8080/api/student
