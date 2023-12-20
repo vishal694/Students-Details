@@ -2,7 +2,7 @@
 
 ## I created APIs for Students Details related.
 
-## I implemented few parts in Project
+## I implemented few parts in Project and also, I uploaded sample data in dbTables folder
 
   > 1 Students
 		> http://localhost:8080/api/student
@@ -19,4 +19,3 @@
 		
 ## I also implemented swagger page for this project.
 	http://localhost:8080/swagger-ui.html
-	
