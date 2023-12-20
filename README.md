@@ -1,17 +1,23 @@
-# Empty Spring REST example
 
-This is an empty spring boot rest project that uses Tomcat. It was created just to explain a Jenkins deployment. It is not a template project!
- 
-## Technologies
+#Project Title: Students Details
 
-1. Spring Boot 2.x (spring-boot-starter-web, spring-boot-starter-tomcat)
-2. Java 8+
-3. Tomcat 8.5.x
-4. Maven 3.6.x
- 
-## Exposed methods
+I created APIs for Students Details related.
 
-**1. Get user by id. HTTP Method: GET**
-```
-http://localhost:8080/emptyspringrestexample/users/1
-```
+I implemented few parts in Project
+  1 Students
+		http://localhost:8080/api/student
+		http://localhost:8080/api/student/{enrollNo}
+  2 Books  
+		http://localhost:8080/api/book
+		http://localhost:8080/api/book/{bookId}
+  3 Vehicle
+		http://localhost:8080/api/vehicle
+		http://localhost:8080/api/vehicle/{vehicleId}
+  4 class
+		http://localhost:8080/api/class
+		http://localhost:8080/api/class/{classId}
+		
+
+I also implemented swagger page for this project.
+	http://localhost:8080/swagger-ui.html
+	
