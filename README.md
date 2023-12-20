@@ -1,9 +1,10 @@
 
-#Project Title: Students Details
+#  Project Title: Students Details
 
-I created APIs for Students Details related.
+## I created APIs for Students Details related.
 
-I implemented few parts in Project
+## I implemented few parts in Project
+###
   1 Students
 		http://localhost:8080/api/student
 		http://localhost:8080/api/student/{enrollNo}
@@ -17,7 +18,6 @@ I implemented few parts in Project
 		http://localhost:8080/api/class
 		http://localhost:8080/api/class/{classId}
 		
-
-I also implemented swagger page for this project.
+## I also implemented swagger page for this project.
 	http://localhost:8080/swagger-ui.html
 	
